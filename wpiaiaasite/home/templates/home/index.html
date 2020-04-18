@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AIAA - WPI</title>
+        <link rel="stylesheet" href="{% static 'home/main.css' %}" />
+    </head>
+    <img
+        src="{% static 'home/img/aiaa-logo-light-2000px.png' %}"
+        alt="AIAA - WPI Student Chapter"
+        class="logo"
+    />
+    <body>
+        <a class="center wikibtn" href="{% url 'wiki' %}">Go to Wiki.</a>
+        <div class="center">
+            <h3 style="text-align: center;">
+                This website is under construction. Thank you for your patience.
+            </h3>
+            <p>
+                The WPI Student Chapter of the AIAA is WPI's Aerospace
+                Professional Society. AIAA runs a variety of programs ranging
+                from profesional development and academic advising, to high
+                power rocketry and model airplanes. For more information about
+                AIAA national, visit their
+                <a href="https://aiaa.org">website</a>. If you are looking for
+                WPI AIAA's USLI team, you can visit there website
+                <a href="http://wpiusli.com">here</a>. If you would like to
+                contact us, please email aiaa-officers@wpi.edu
+            </p>
+        </div>
+    </body>
+</html>
