@@ -1,0 +1,20 @@
+{% extends "wiki/base_site.html" %}
+{% load static %}
+{% block wiki_site_title %} - AIAA Wiki{% endblock %}
+
+{% block wiki_header_branding %}
+<a class="navbar-brand" style="padding-top: 8px;" href="/"><img src="{% static 'home/img/aiaa-logo-light-2000px.png' %}"
+        alt="AIAA - WPI Student Chapter" style="padding-top: 0px; width: 100px;" /></a>
+{% endblock %}
+
+{% block wiki_header_navlinks %}
+<ul class="nav navbar-nav">
+    <li class="active"><a href="/">Home</a></li>
+    <li class="active"><a href="{% url 'wiki:root' %}">Directory</a></li>
+</ul>
+{% endblock %}
+
+{% block css %}
+<link href="{% static "home/main.css" %}" rel="stylesheet">
+<link rel="icon" href="{% static 'icon/favicon-32x32.png' %}" />
+{% endblock %}
