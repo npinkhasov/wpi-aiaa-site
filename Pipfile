@@ -10,7 +10,6 @@ pylint = "*"
 [packages]
 django = "*"
 pillow = "*"
-wiki = "*"
 django-nyt = "*"
 
 [requires]
