@@ -24,9 +24,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '&&8h7t*&tecxoluh4&&dym)8ax^*2g5g^^f9hcv!m-iu&0rk7i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["aiaa.wpi.edu"]
+ALLOWED_HOSTS = ["aiaa.wpi.edu", "127.0.0.1"]
 
 
 # Application definition

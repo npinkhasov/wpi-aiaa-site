@@ -1,0 +1,17 @@
+asgiref==3.3.1
+bleach==3.2.1
+Django==3.1.5
+django-classy-tags==2.0.0
+django-js-asset==1.2.2
+django-mptt==0.11.0
+django-nyt==1.1.6
+django-sekizai==2.0.0
+Markdown==3.3.3
+packaging==20.8
+Pillow==8.1.0
+pyparsing==2.4.7
+pytz==2020.5
+six==1.15.0
+sorl-thumbnail==12.7.0
+sqlparse==0.4.1
+webencodings==0.5.1
