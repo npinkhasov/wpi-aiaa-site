@@ -6,7 +6,8 @@
 <link rel="icon" href="{% static 'icon/favicon-33x32.png' %}" />
 <a class="navbar-brand" style="padding-top: 7px;" href="/"><img
         src="{% static 'home/img/aiaa-logo-light-2000px-nosub.png' %}" alt="AIAA - WPI Student Chapter"
-        style="padding-top: 1px; width: 100px;" /></a>
+        style="padding-top: 1px; width: 100px;" />
+    </a>
 {% endblock %}
 
 {% block wiki_header_navlinks %}
@@ -15,7 +16,7 @@
         <a class="nav-link text-white" href="/">Home</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link text-white" href="{% url 'wiki:root' %}">Directory</a>
+        <a class="nav-link text-white" href="{% url 'wiki:root' %}">Wiki Directory</a>
     </li>
 </ul>
 {% endblock %}

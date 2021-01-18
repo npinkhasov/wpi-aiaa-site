@@ -71,7 +71,7 @@ ROOT_URLCONF = 'wpiaiaasite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["templates/"],
+        'DIRS': ["/home/administrator/wpi-aiaa-site/wpiaiaasite/templates/", "templates/"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
