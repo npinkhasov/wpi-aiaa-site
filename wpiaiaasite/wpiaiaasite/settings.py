@@ -14,6 +14,7 @@ import os
 import json
 from django.urls import reverse_lazy
 
+
 with open("/etc/config.json") as config_file:
     config = json.load(config_file)
 
@@ -28,7 +29,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = config["SECRET_KEY"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["aiaa.wpi.edu", "127.0.0.1"]
 
@@ -154,3 +155,11 @@ ANONYMOUS = False  # Treat annonymous users as users in "other group"
 ANONYMOUS_CREATE = False  # Anonymous users can create pages.
 ANONYMOUS_UPLOAD = False  # Anonymous users can upload media.
 ANONYMOUS_WRITE = False  # Anonymous users can edit pages.
+
+# Email Settings
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = config["EMAIL_USER"]
+EMAIL_HOST_PASSWORD = config["EMAIL_PASS"]
