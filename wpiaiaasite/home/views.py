@@ -2,7 +2,18 @@ from django.shortcuts import render
 
 # Create your views here.
 
-
 def index(request):
-    context = {}
+    context = {'nbar': 'home'}
     return render(request, "home/index.html", context)
+
+def subcommittees(request):
+    context = {'nbar': 'subcommittees'}
+    return render(request, "home/subcommittees.html", context)
+
+def events(request):
+    context = {'nbar': 'events'}
+    return render(request, "home/events.html", context)
+
+def about(request):
+    context = {'nbar': 'about'}
+    return render(request, "home/about.html", context)

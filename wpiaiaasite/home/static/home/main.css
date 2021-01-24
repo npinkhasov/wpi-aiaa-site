@@ -29,6 +29,18 @@
     font-style: normal;
 }
 
+.grow {
+    transition: all 0.2s ease-in-out;
+}
+.grow:hover {
+    transform: scale(1.1);
+}
+
+.front-carousel-images {
+    object-fit: cover;
+    height: 10em;
+}
+
 body {
     /* Corporate Colors */
     --aiaa-blue: #00338e;
@@ -47,48 +59,4 @@ body {
     --grey: #dbc6ba;
 
     font-family: futura;
-    background-color: var(--aiaa-blue);
-    text-align: justify;
-}
-
-
-.center{
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    background-color: white;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 2px 2px 3px var(--jet-black);
-}
-
-h1, h2 {
-    font-family: futura-thin;
-    font-style: normal;
-    color: white;
-    text-align: center;
-    text-shadow: 2px 2px 3px var(--jet-black);
-    margin: 3px;
-}
-
-h2 {
-    font-size: large;
-}
-
-.logo {
-    padding-top: 10rem;
-    width: 25%; 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.wikibtn {
-    color: var(--jet-black);
-    width: 10%;
-    display: block; 
-    text-align: center;
-    margin-top: 50px;
-    background-color: var(--aiaa-gold);
 }
