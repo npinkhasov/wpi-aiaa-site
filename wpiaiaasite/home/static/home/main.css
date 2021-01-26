@@ -1,11 +1,11 @@
 /* 
-        This style sheet should comply with the AIAA
-        Brand Standards.  For details on how,
-        to maintain compatability, see the AIAA
-        Brand Standard Manual.
+    This style sheet should comply with the AIAA
+    Brand Standards.  For details on how,
+    to maintain compatability, see the AIAA
+    Brand Standard Manual.
 
-        https://www.aiaa.org/docs/default-source/uploadedfiles/about-aiaa/branding-and-logo/brandstandardmanual-v7-10.pdf?sfvrsn=bc4445cd_0
-    */
+    https://www.aiaa.org/docs/default-source/uploadedfiles/about-aiaa/branding-and-logo/brandstandardmanual-v7-10.pdf?sfvrsn=bc4445cd_0
+*/
 /*
     FONTS
     A variety of AIAA approved fonts are availible in 
@@ -29,18 +29,6 @@
     font-style: normal;
 }
 
-.grow {
-    transition: all 0.2s ease-in-out;
-}
-.grow:hover {
-    transform: scale(1.1);
-}
-
-.front-carousel-images {
-    object-fit: cover;
-    height: 10em;
-}
-
 body {
     /* Corporate Colors */
     --aiaa-blue: #00338e;
@@ -59,4 +47,21 @@ body {
     --grey: #dbc6ba;
 
     font-family: futura;
+}
+
+.grow {
+    transition: all 0.2s ease-in-out;
+}
+.grow:hover {
+    transform: scale(1.1);
+}
+
+.front-carousel-images {
+    object-fit: cover;
+    height: 10em;
+}
+
+.portrait {
+    width: 20%;
+    border-radius: 50%;
 }

@@ -4,12 +4,16 @@
 
 {% block wiki_header_branding %}
 <link rel="icon" href="{% static 'icon/favicon-33x32.png' %}" />
-<a class="navbar-brand" style="padding-top: 7px;" href="/"><img
+<a class="navbar-brand" style="padding-top: 7px;" href="{% url 'home:index' %}"><img
         src="{% static 'home/img/aiaa-logo-light-2000px-nosub.png' %}" alt="AIAA - WPI Student Chapter"
         style="padding-top: 1px; width: 100px;" />
     </a>
-    <h5 class="text-light mt-3"><i>WPI</i></h5>
-    <h5 class="text-light mt-3 lead ml-2"><i>Wiki</i></h5>
+    <a href="{% url 'wiki:root' %}">
+        <h5 class="text-light mt-3"><i>WPI</i></h5>
+    </a>
+    <a href="{% url 'wiki:root' %}">
+        <h5 class="text-light mt-3 lead ml-2"><i>Wiki</i></h5>
+    </a>
 {% endblock %}
 
 {% block wiki_header_navlinks %}
