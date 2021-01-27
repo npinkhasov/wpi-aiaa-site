@@ -124,3 +124,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Static and Media
+wpiaiaasite/static/
+wpiaiaasite/media/

@@ -1,1 +1,0 @@
-To see what the different varients of Futura look like, visit https://www.wfonts.com/font/futura
