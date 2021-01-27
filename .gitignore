@@ -128,3 +128,6 @@ dmypy.json
 # Static and Media
 wpiaiaasite/static/
 wpiaiaasite/media/
+
+# VSCode
+.vscode/
