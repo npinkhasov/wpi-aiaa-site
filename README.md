@@ -36,7 +36,7 @@ For essier debuging, enable DEBUG in the settings.  To do this, navigate to ```w
  python wpiaiaasite/manage.py runserver
  ```
 
-## Deploying To aiaa.wpi.edu
+## Deploying to aiaa.wpi.edu
 To deploy to aiaa.wpi.edu, you must virst be on a computer on WPI's network.  You can either use a physical on campus computer or use remote desktop to connect to a virtual machine like windows.wpi.edu.  Once on a computer, open powershell (command prompt does not work for this) and enter the following command to ssh into aiaa.wpi.edu.
 **Before deploying, ensure that ```DEBUG``` is set to ```False```!**
 
