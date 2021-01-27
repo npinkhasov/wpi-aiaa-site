@@ -8,7 +8,7 @@
  
  First you must create a virtual environment.  This can be done with the following command.  
  ```
- python  -m venv env
+ python -m venv env
  ```
  
  Next, start yoru virtual environment.  After you do this, you should see ```(env)``` at the start of each command line.  You will need to do this everytime you want to run the test server.  
@@ -71,4 +71,4 @@ Finally, restart the server to load your changes.
 sudo service apache2 restart
 ```
 
-After this, your changes should be live.  Check your work by going to [aiaa.wpi.edu](https://aiaa.wpi.edu)
+After this, your changes should be live.  Check your work by going to [aiaa.wpi.edu](https://aiaa.wpi.edu).
