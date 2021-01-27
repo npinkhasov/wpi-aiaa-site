@@ -22,18 +22,19 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-if DEBUG:
+# If running on the real server, prevents debug mode.
+if not DEBUG or os.path.realpath(__file__) == "/home/administrator/wpiaiaasite/wpiaiaasite/settings.py":
+    DEBUG = False
+    with open("/etc/config.json") as config_file:
+        config = json.load(config_file)
+else:
     config = {
         "SECRET_KEY": "dog",
         "EMAIL_USER": "d",
         "EMAIL_PASS": ""
     }
-else: 
-    with open("/etc/config.json") as config_file:
-        config = json.load(config_file)
-
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config["SECRET_KEY"]
 
@@ -55,6 +56,7 @@ INSTALLED_APPS = [
     'wiki.plugins.images.apps.ImagesConfig',
     'wiki.plugins.macros.apps.MacrosConfig',
     'home',
+    'hprc',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

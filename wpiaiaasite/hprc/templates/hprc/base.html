@@ -1,6 +1,5 @@
 {% load static %}
 
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -10,16 +9,15 @@
 
     <!-- CSS -->
     <link href="{% static 'home/bootstrap.css' %}" rel="stylesheet">
-    <link href="{% static 'home/bootstrap-theme.css' %}" rel="stylesheet">
-    <link href="{% static 'home/main.css' %}" rel="stylesheet">
+    <link href="{% static 'hprc/bootstrap-theme.css' %}" rel="stylesheet">
 
-    <link rel="icon" href="{% static 'icon/favicon.ico' %}" />
-    <title>AIAA - WPI</title>
+    <link rel="icon" href="{% static 'hprc/img/icon.png' %}" />
+    <title>WPI HPRC</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="{% url 'home:index' %}">
-            <img src="{% static 'home/img/aiaa-logo-light-2000px-nosub.png' %}" alt="WPI AIAA" height="50">
+        <a class="navbar-brand" href="{% url 'hprc:index' %}">
+            <img src="{% static 'hprc/img/hprc logo white.png' %}" alt="WPI AIAA" height="50">            
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -27,10 +25,19 @@
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-                <a class="nav-link {% if nbar == 'home' %}active{% endif %}" aria-current="page" href="{% url 'home:index' %}">Home</a>
-                <a class="nav-link {% if nbar == 'subcommittees' %}active{% endif %}" href="{% url 'home:subcommittees' %}">Subcommittees</a>
-                <!-- <a class="nav-link {% if nbar == 'events' %}active{% endif %}" href="{% url 'home:events' %}">Events</a> -->
-                <a class="nav-link {% if nbar == 'about' %}active{% endif %}" href="{% url 'home:about' %}">About</a>
+                <a class="nav-link {% if nbar == 'home' %}active{% endif %}" aria-current="page" href="{% url 'hprc:index' %}">Home</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="projectsLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="projectsLabel">
+                    <a class="dropdown-item" href="#">2021</a>
+                    <a class="dropdown-item" href="#">2020, Project Goddard</a>
+                    <a class="dropdown-item" href="#">2019, G.O.A.T.S</a>
+                  </div>
+                </li>
+                <a class="nav-link {% if nbar == 'events' %}active{% endif %}" href="{% url 'home:events' %}">Sponsors</a>
+                <a class="nav-link {% if nbar == 'about' %}active{% endif %}" href="{% url 'home:about' %}">Teams</a>
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -48,10 +55,9 @@
   </body>
   <footer class="w-100" style="position:fixed; bottom:0; left:0;">
     <div class="w-100 p-3 text-right text-light bg-primary">
-        <a class="btn btn-outline-light btn-sm mt-0 me-2 float-left" href="https://www.aiaa.org/" role="button">AIAA National</a>
-        <a class="btn btn-outline-light btn-sm mt-0 me-2 ml-2 float-left" href="{% url 'hprc:index' %}" role="button">HPRC</a>
+        <a class="btn btn-outline-light btn-sm mt-0 me-2 float-left" href="{% url 'home:index' %}" role="button">WPI AIAA</a>
         <div class="float-left">
-            <a href="mailto:aiaa-officers@wpi.edu">
+            <a href="mailto:hprc-officers@wpi.edu">
                 <img src="{% static "icon/email-white.svg" %}" class="ml-3 grow" alt="Email"
                 width=30 />
             </a>

@@ -1,32 +1,40 @@
-{% extends "wiki/base_site.html" %}
+{% extends "wiki/base.html" %}
 {% load static %}
-{% block wiki_site_title %} - AIAA Wiki{% endblock %}
+{% block wiki_site_title %}{% endblock %}
 
 {% block wiki_header_branding %}
 <link rel="icon" href="{% static 'icon/favicon-33x32.png' %}" />
-<a class="navbar-brand" style="padding-top: 7px;" href="{% url 'home:index' %}"><img
-        src="{% static 'home/img/aiaa-logo-light-2000px-nosub.png' %}" alt="AIAA - WPI Student Chapter"
-        style="padding-top: 1px; width: 100px;" />
-    </a>
-    <a href="{% url 'wiki:root' %}">
-        <h5 class="text-light mt-3"><i>WPI</i></h5>
-    </a>
-    <a href="{% url 'wiki:root' %}">
-        <h5 class="text-light mt-3 lead ml-2"><i>Wiki</i></h5>
-    </a>
+<a class="navbar-brand" style="padding-top: 7px;" href="{% url 'wiki:root' %}">
+    <img
+        src="{% static 'home/img/wiki-logo.png' %}" alt="AIAA - WPI Student Chapter"
+        style="width: 200px;" 
+    />
+</a>
+{% endblock %}
+
+{% block wiki_footer_logo %}
+<a href="{% url 'home:index' %}" class="float-right"><img src="{% static 'home/img/aiaa-logo-light-2000px-blue.png' %}" height=80/></a>
+
+<span class="text-right mr-auto">
+    © <script>document.write(new Date().getFullYear())</script> Copyright: WPI AIAA
+</span>
+{% endblock %}
+
+{% block wiki_footer_prepend %}
+<!-- This block doesn't seem to work. -->
 {% endblock %}
 
 {% block wiki_header_navlinks %}
 <ul class="navbar-nav ml-auto">
     <li class="nav-item">
-        <a class="nav-link text-white" href="/">Home</a>
+        <a class="nav-link text-white" href="{% url 'wiki:root' %}">Directory</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link text-white" href="{% url 'wiki:root' %}">Wiki Directory</a>
+        <a class="nav-link text-white" href="{% url 'home:about' %}">About</a>
     </li>
 </ul>
 {% endblock %}
 
 {% block css %}
-
+<link rel="icon" href="{% static 'icon/favicon.ico' %}" />
 {% endblock %}
