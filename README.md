@@ -30,6 +30,11 @@
  
 For essier debuging, enable DEBUG in the settings.  To do this, navigate to ```wpiaiaasite/wpiaiaasite/settings.py``` and set ```DEBUG``` to ```True```.  
 **Do not push this change to the server as this would create a security issue.**
+
+Next, initialize the database.
+```
+python wpiaiaasite/manage.py migrate
+```
  
  You should now be able to run the test server.  This hosts the website on your local machine for development.
  ```
