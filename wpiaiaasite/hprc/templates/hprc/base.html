@@ -20,11 +20,11 @@
         <a class="navbar-brand" href="{% url 'hprc:index' %}">
             <img src="{% static 'hprc/img/hprc logo white.png' %}" alt="WPI AIAA" height="50">            
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#projectsContent" aria-controls="projectsContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="projectsContent">
           <ul class="navbar-nav mr-auto">
                 <a class="nav-link {% if nbar == 'home' %}active{% endif %}" aria-current="page" href="{% url 'hprc:index' %}">Home</a>
                 <li class="nav-item dropdown">
@@ -47,7 +47,9 @@
             </ul>
         </div>
     </nav>
-    {% block content %}{% endblock %}
+    <div class="container-fluid text-justify">
+      {% block content %}{% endblock %}
+    </div>
     <br class="mb-5">
     <br class="mb-5">
     <br class="mb-5">
