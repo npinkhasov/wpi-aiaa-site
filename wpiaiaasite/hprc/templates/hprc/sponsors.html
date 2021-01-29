@@ -1,0 +1,78 @@
+{% extends "hprc/base.html" %} {% load static %} {% block content %}
+
+<br class="mt-5 mb-5" />
+<div class="container">
+    <h1 class="display-3 mt-5">Sponsors</h1>
+    <hr />
+    <p class="lead">
+        In addition to the AIAA, HPRC is able to compete in rocketry
+        competitions thanks to the generous donations of our Sponsors.
+    </p>
+    <br class="mt-5" />
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <h1>Platinum</h1>
+                <hr>
+                <i>
+                    <p class="subtle text-muted">No platinum sponsors this year.</p>
+                </i>
+
+                <h1>Gold</h1>
+                <hr>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <a href="https://www.wpi.edu/about/innovation-entrepreneurship/programs/tinkerbox"
+                            target="_blank">
+                            <img class="grow pt-3" width="100%" src=" {% static 'hprc/img/sponsors/TinkerBox.png' %}"
+                                alt="TinkerBox" />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="http://www.ensign-bickfordind.com/" target="_blank">
+                            <img class="grow pt-3" width="100%" src=" {% static 'hprc/img/sponsors/ebi.svg' %}"
+                                alt="EBI" />
+                        </a>
+                    </div>
+                </div>
+                <h1>Silver</h1>
+                <hr>
+                <i>
+                    <p class="subtle text-muted">No silver sponsors this year.</p>
+                </i>
+
+                <h1>Bronze</h1>
+                <hr>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                        <a href="https://www.testdevices.com/" target="_blank">
+                            <img class="grow pt-3" width="100%" src=" {% static 'hprc/img/sponsors/test-devices.png' %}"
+                                alt="EBI" />
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="https://www.cse-ma.com/" target="_blank">
+                            <img class="grow pt-3" width="100%" src=" {% static 'hprc/img/sponsors/cse.jpg' %}"
+                                alt="EBI" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <p>
+                    Interested in sponsoring HPRC? Check our sponsorship package. You can email the
+                    <a href="mailto:hprc-officers@wpi.edu">hprc officer board</a>
+                    for more details.
+                </p>
+                <div class="text-center">
+                    <a class="btn btn-primary text-center" href="{% url 'hprc:sponsorpackage' %}"
+                        role="button">Sponsorship
+                        Package</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br class="mb-5">
+{% endblock content %}

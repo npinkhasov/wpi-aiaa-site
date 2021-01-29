@@ -1,0 +1,16 @@
+{% extends "hprc/base.html" %} {% load static %} {% block content %}
+<div style="background-color:#ac2b37;">
+    <object data="{% static 'hprc/sponsorship_package.pdf' %}" type="application/pdf" width="100%" height="800px">
+        <div style="background-color: white;">
+            <br class="mt-5"><br class="mt-5"><br class="mt-5">
+            <p class="text-center lead">It appears you don't have a PDF plugin for this browser.
+                You can still download the sponsorship package to view on your computer.</p>
+            <div class="text-center">
+                <a class="btn btn-primary text-center" href="{% url 'hprc:sponsorpackage' %}" role="button">Sponsorship
+                    Package</a>
+            </div>
+        </div>
+    </object>
+</div>
+
+{% endblock content %}

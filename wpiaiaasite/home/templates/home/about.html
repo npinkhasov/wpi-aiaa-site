@@ -1,100 +1,141 @@
-{% extends "home/base.html" %}
-{% load static %}
-{% block content %}
+{% extends "home/base.html" %} {% load static %} {% block content %}
 <div class="container">
     <h1 class="text-center display-4 mt-5">About AIAA</h1>
-    
-    <br>
-    <h3>What is the AIAA?</h3>
-    <hr>
-    <p>
-        The American Institute of Aeronautics and Astronautics (AIAA) is a 
-        global organization of over 31,000 members that serves to link together 
-        professionals, educators, and students of the aerospace industry.
-        Each year, AIAA sponsors a large number of technical conferences and
-        student competitions across the nation. It also publishes a variety 
-        of books – including the AIAA Education series of textbooks – and nine
-        research journals.
-        Organizationally, AIAA is composed of seven regional offices, sixty-four 
-        local sections, and over 160 student branches.
 
-    <br>
-    <h3>What does the AIAA do at WPI?</h3>
-    <hr>
+    <br />
+    <h3>What is the AIAA?</h3>
+    <hr />
     <p>
-        The WPI Student Branch is one of campus' largest special interest clubs.  
-        We organize weekly events like guest speakers, design challenges, and 
-        social activities.  AIAA is an excellent way to meet other people who 
-        are interested in aerospace.  The club runs a number of subcommittees, 
-        most of which are focused on hands on aerospace projects.  As a professional
+        The American Institute of Aeronautics and Astronautics (AIAA) is a
+        global organization of over 31,000 members that serves to link together
+        professionals, educators, and students of the aerospace industry. Each
+        year, AIAA sponsors a large number of technical conferences and student
+        competitions across the nation. It also publishes a variety of books –
+        including the AIAA Education series of textbooks – and nine research
+        journals. Organizationally, AIAA is composed of seven regional offices,
+        sixty-four local sections, and over 160 student branches.
+
+        <br />
+    </p>
+
+    <h3>What does the AIAA do at WPI?</h3>
+    <hr />
+    <p>
+        The WPI Student Branch is one of campus' largest special interest clubs.
+        We organize weekly events like guest speakers, design challenges, and
+        social activities. AIAA is an excellent way to meet other people who are
+        interested in aerospace. The club runs a number of subcommittees, most
+        of which are focused on hands on aerospace projects. As a professional
         society, we also offer things like career fair prep and schedule help.
-        The WPI AIAA is open to all WPI students, regardless of major.  If your're
-        interested in AIAA, you can join us on Techsync.
+        The WPI AIAA is open to all WPI students, regardless of major. If
+        your're interested in AIAA, you can join us on Techsync.
     </p>
     <div class="row justify-content-center">
         <div class="col-md-6 text-center">
-            <a class="btn text-light btn-primary mr-3" href="{% url 'home:subcommittees' %}" role="button">Subcommittees</a>
-            <a class="btn text-light btn-primary ml-3" target="_blank" href="https://wpi.campuslabs.com/engage/organization/aiaa" role="button">Join AIAA</a>
+            <a
+                class="btn text-light btn-primary mr-3"
+                href="{% url 'home:subcommittees' %}"
+                role="button"
+                >Subcommittees</a
+            >
+            <a
+                class="btn text-light btn-primary ml-3"
+                target="_blank"
+                href="https://wpi.campuslabs.com/engage/organization/aiaa"
+                role="button"
+                >Join AIAA</a
+            >
         </div>
     </div>
 
-    <br>
+    <br />
     <h3>Who runs the AIAA at WPI?</h3>
-    <hr>
+    <hr />
     <p>
-        The WPI student chapter is lead by the Officer Board.  Members of the 
-        board are elected by the club's members. 
+        The WPI student chapter is lead by the Officer Board. Members of the
+        board are elected by the club's members.
     </p>
-    <div class="row justify-content-center">
+    <div class="row justify-content-center text-left">
         <div class="col-sm-3">
             <div class="card">
-                <img class="card-img-top" src="{% static 'home/img/OfficerBoardPhotos/chair.jpg' %}" alt="Chair">
+                <img
+                    class="card-img-top"
+                    src="{% static 'home/img/OfficerBoardPhotos/chair.jpg' %}"
+                    alt="Chair"
+                />
                 <div class="card-body">
                     <h1 class="card-title">Chair</h1>
                     <h4 class="card-text">Krystina Waters</h4>
-                    <p class="card-text">Class of '21, Aerospace Engineering BS</p>
+                    <p class="card-text">
+                        Class of '21, Aerospace Engineering BS
+                    </p>
                 </div>
             </div>
         </div>
         <div class="col-sm-3">
             <div class="card">
-                <img class="card-img-top" src="{% static 'home/img/OfficerBoardPhotos/vicechair.jpg' %}" alt="Vicechair">
+                <img
+                    class="card-img-top"
+                    src="{% static 'home/img/OfficerBoardPhotos/vicechair.jpg' %}"
+                    alt="Vicechair"
+                />
                 <div class="card-body">
                     <h1 class="card-title">Vice-Chair</h1>
                     <h4 class="card-text">Peter Dentch</h4>
-                    <p class="card-text">Class of '21, Robotics Engineering BS/MS</p>
+                    <p class="card-text">
+                        Class of '21, Robotics Engineering BS/MS
+                    </p>
                 </div>
             </div>
         </div>
         <div class="col-sm-3">
-            <div class="card"><img class="card-img-top" src="{% static 'home/img/OfficerBoardPhotos/treasurer.jpg' %}" alt="Treasurer">
+            <div class="card">
+                <img
+                    class="card-img-top"
+                    src="{% static 'home/img/OfficerBoardPhotos/treasurer.jpg' %}"
+                    alt="Treasurer"
+                />
                 <div class="card-body">
                     <h1 class="card-title">Treasurer</h1>
                     <h4 class="card-text">Nathaniel Rutkowski</h4>
-                    <p class="card-text">Class of '21, Aerospace Engineering BS/MS</p>
+                    <p class="card-text">
+                        Class of '21, Aerospace Engineering BS/MS
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-    <br>
-    <div class="row justify-content-center">
+    <br />
+    <div class="row justify-content-center text-left">
         <div class="col-sm-3">
             <div class="card">
-                <img class="card-img-top" src="{% static 'home/img/OfficerBoardPhotos/secretary.jpg' %}" alt="Secretary">
+                <img
+                    class="card-img-top"
+                    src="{% static 'home/img/OfficerBoardPhotos/secretary.jpg' %}"
+                    alt="Secretary"
+                />
                 <div class="card-body">
                     <h1 class="card-title">Secretary</h1>
                     <h4 class="card-text">Gracie L. McIntire</h4>
-                    <p class="card-text">Class of '21, Aerospace Engineering BS/MS</p>
+                    <p class="card-text">
+                        Class of '21, Aerospace Engineering BS/MS
+                    </p>
                 </div>
             </div>
         </div>
         <div class="col-sm-3">
             <div class="card">
-                <img class="card-img-top" src="{% static 'home/img/OfficerBoardPhotos/pr.jpg' %}" alt="PR Officer">
+                <img
+                    class="card-img-top"
+                    src="{% static 'home/img/OfficerBoardPhotos/pr.jpg' %}"
+                    alt="PR Officer"
+                />
                 <div class="card-body">
                     <h1 class="card-title">P.R. Officer</h1>
                     <h4 class="card-text">Christian Schrader</h4>
-                    <p class="card-text">Class of '21, Aerospace Engineering BS/MS</p>
+                    <p class="card-text">
+                        Class of '21, Aerospace Engineering BS/MS
+                    </p>
                 </div>
             </div>
         </div>
