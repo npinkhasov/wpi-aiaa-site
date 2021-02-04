@@ -23,3 +23,6 @@ urlpatterns = [
     path('wiki/', include('wiki.urls')),
     path('hprc/', include('hprc.urls'))
 ]
+
+handler404 = 'home.views.handler404'
+handler500 = 'home.views.handler500'

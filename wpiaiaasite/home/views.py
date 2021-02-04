@@ -15,3 +15,15 @@ def events(request):
 def about(request):
     context = {'nbar': 'about'}
     return render(request, "home/about.html", context)
+
+def handler404(request, *args, **argv):
+    context = {'nbar': request.path[1:]}
+    response = render(request, "home/404.html", context)
+    response.status_code = 404
+    return response
+
+def handler500(request, *args, **argv):
+    context = {'nbar': request.path[1:]}
+    response = render(request, "home/404.html", context)
+    response.status_code = 500
+    return response

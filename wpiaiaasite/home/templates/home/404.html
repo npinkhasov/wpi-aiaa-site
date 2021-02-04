@@ -1,0 +1,29 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <h1 class="text-center display-1 mt-5">404</h1>
+
+    <br />
+    <h3 class="text-center">Sorry, but the page {{ nbar }} does not exist.</h3>
+    <hr />
+    <p class="lead text-center">
+        If there should be a something here, please report it to the site admin.
+    </p>
+    <div class="row justify-content-center">
+        <div class="col-md-12 text-center">
+            <a class="btn text-light btn-primary mr-3 mb-3" href="mailto:aiaa-officers@wpi.edu" role="button">
+                Report Problem
+            </a>
+        </div>
+        <div class="col-md-12 text-center">
+            <a class="btn text-light btn-primary mr-3" href="{% url 'home:index' %}" role="button">AIAA Home</a>
+            <a class="btn text-light btn-primary mr-3" href="{% url 'wiki:root' %}" role="button">Wiki</a>
+            <a class="btn text-light btn-primary mr-3" href="{% url 'hprc:index' %}" role="button">HPRC Home</a>
+        </div>
+    </div>
+
+    <br />
+
+</div>
+{% endblock content %}
