@@ -24,5 +24,7 @@ urlpatterns = [
     path('hprc/', include('hprc.urls'))
 ]
 
+handler400 = 'home.views.handler400'
+handler403 = 'home.views.handler403'
 handler404 = 'home.views.handler404'
 handler500 = 'home.views.handler500'

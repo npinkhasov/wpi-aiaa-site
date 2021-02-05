@@ -16,6 +16,18 @@ def about(request):
     context = {'nbar': 'about'}
     return render(request, "home/about.html", context)
 
+def handler400(request, *args, **argv):
+    context = {'nbar': request.path[1:]}
+    response = render(request, "home/400.html", context)
+    response.status_code = 400
+    return response
+
+def handler403(request, *args, **argv):
+    context = {'nbar': request.path[1:]}
+    response = render(request, "home/403.html", context)
+    response.status_code = 403
+    return response
+
 def handler404(request, *args, **argv):
     context = {'nbar': request.path[1:]}
     response = render(request, "home/404.html", context)
