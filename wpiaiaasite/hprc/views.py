@@ -13,3 +13,8 @@ def sponsors(request):
 def sponsorpackage(request):
     context = {'nbar': 'sponsors'}
     return render(request, "hprc/sponsorpackage.html", context)
+
+def construction(request):
+    context = {'nbar': 'dog'}
+    return render(request, "hprc/construction.html", context)
+    

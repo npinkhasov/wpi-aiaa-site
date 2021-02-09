@@ -37,15 +37,17 @@
                         Projects
                     </a>
                     <div class="dropdown-menu" aria-labelledby="projectsLabel">
-                        <a class="dropdown-item" href="#">2021, Sirius and Polaris</a>
-                        <a class="dropdown-item" href="#">2020, Project Goddard</a>
-                        <a class="dropdown-item" href="#">2019, G.O.A.T.S</a>
+                        <a class="dropdown-item" href="{% url 'hprc:construction' %}">2021, Sirius and Polaris</a>
+                        <a class="dropdown-item" href="{% url 'hprc:construction' %}">2020, Project Goddard</a>
+                        <a class="dropdown-item" href="{% url 'hprc:construction' %}">2019, G.O.A.T.S</a>
                     </div>
                 </li>
                 <a class="nav-link {% if nbar == 'sponsors' %}active{% endif %}"
                     href="{% url 'hprc:sponsors' %}">Sponsors</a>
-                <a class="nav-link {% if nbar == 'team' %}active{% endif %}" href="{% url 'hprc:index' %}">Resources</a>
-                <a class="nav-link {% if nbar == 'team' %}active{% endif %}" href="{% url 'hprc:index' %}">Team</a>
+                <a class="nav-link {% if nbar == 'team' %}active{% endif %}"
+                    href="{% url 'hprc:construction' %}">Resources</a>
+                <a class="nav-link {% if nbar == 'team' %}active{% endif %}"
+                    href="{% url 'hprc:construction' %}">Team</a>
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -55,6 +57,7 @@
         </div>
     </nav>
     <div class="text-justify">{% block content %}{% endblock %}</div>
+    <br class="mb-5" />
     <br class="mb-5" />
     <br class="mb-5" />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
