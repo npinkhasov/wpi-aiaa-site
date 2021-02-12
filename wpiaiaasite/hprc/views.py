@@ -18,3 +18,7 @@ def construction(request):
     context = {'nbar': 'dog'}
     return render(request, "hprc/construction.html", context)
     
+def team(request):
+    context = {'nbar': 'team'}
+    return render(request, "hprc/team.html", context)
+    
