@@ -16,6 +16,10 @@ def about(request):
     context = {'nbar': 'about'}
     return render(request, "home/about.html", context)
 
+def proposal(request):
+    context = {'nbar': 'subcommittees'}
+    return render(request, "home/jetproposal.html", context)
+
 def handler400(request, *args, **argv):
     context = {'nbar': request.path[1:]}
     response = render(request, "home/400.html", context)

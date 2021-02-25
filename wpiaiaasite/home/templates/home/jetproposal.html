@@ -1,0 +1,16 @@
+{% extends "home/base.html" %} {% load static %} {% block content %}
+<div style="background-color:#00338e;">
+    <object data="{% static 'home/WPI Jet Engine Proposal Revised Submission.pdf' %}" type="application/pdf"
+        width="100%" height="800px">
+        <div style="background-color: white;">
+            <br class="mt-5"><br class="mt-5"><br class="mt-5">
+            <p class="text-center lead">It appears you don't have a PDF plugin for this browser.
+                You can still download the proposal to view on your computer.</p>
+            <div class="text-center">
+                <a class="btn btn-primary text-center" href="{% url 'hprc:sponsorpackage' %}" role="button">Proposal</a>
+            </div>
+        </div>
+    </object>
+</div>
+
+{% endblock content %}
