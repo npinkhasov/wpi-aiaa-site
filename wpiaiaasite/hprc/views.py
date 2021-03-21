@@ -25,6 +25,7 @@ def goats(request):
     context = {
         'nbar': "projects",
         "project_title": "G.O.A.T.S",
+        "year": "2018-2019",
         "lead_text": "WPI's first year competing in USLI",
         "docs": {
             "Proposal": "link",
