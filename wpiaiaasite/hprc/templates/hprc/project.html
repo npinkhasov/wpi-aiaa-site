@@ -1,0 +1,44 @@
+{% extends "hprc/base.html" %}
+{% load static %}
+{% block content %}
+<div class="container-fluid bg-primary">
+    <div class="row " style="min-height: 98vh;">
+        <div class="col-md-3 mt-5 text-center text-light">
+            <h3 class="pt-3">
+                Sponsors
+            </h3>
+            <hr color="white">
+            {% for tier, companies in sponsors.items %}
+            <div>
+                <h4>{{tier}}</h4>
+                {% for company in companies %}
+                <p>{{company}}</p>
+                {% endfor %}
+            </div>
+            {% endfor %}
+            <h3 class="pt-3">
+                Documents
+            </h3>
+            <hr color="white">
+            {% for name, link in docs.items %}
+            <div>
+                <a href="{{link}}" class="m-1 btn btn-outline-light btn-lg" style="width: 80%;">{{name}}</a>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="col-md-9 bg-light p-0 ">
+            <div class="pl-5">
+                <h1 class="display-3 mt-5">{{project_title}}</h1>
+                <hr />
+                <p class="lead">
+                    {{lead_text}}
+                </p>
+                <img class="float-right rounded m-3" style="width:35%;" src="{% static image %}" alt="Rocket Lead" />
+                {% for paragraph in text %}
+                <p>{{paragraph}}</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
