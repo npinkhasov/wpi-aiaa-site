@@ -33,6 +33,10 @@
                 <p class="lead">
                     {{lead_text}}
                 </p>
+                <img class="float-right rounded m-3" style="width:35%;" src="{% static image %}" alt="Rocket Lead" />
+                {% for paragraph in text %}
+                <p>{{paragraph}}</p>
+                {% endfor %}
             </div>
         </div>
     </div>
