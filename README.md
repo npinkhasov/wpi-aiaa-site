@@ -28,8 +28,8 @@
  pip install -r requirements.txt
  ```
  
-For essier debuging, enable DEBUG in the settings.  To do this, navigate to ```wpiaiaasite/wpiaiaasite/settings.py``` and set ```DEBUG``` to ```True```.  
-**Do not push this change to the server as this would create a security issue.**
+When working on the code, enable DEBUG in the settings.  This circumvents the need for a secure config file ussually required to start the server.  To do this, navigate to ```wpiaiaasite/wpiaiaasite/settings.py``` and set ```DEBUG``` to ```True```.  
+**Do not push this change to the server as this would create a security issue.  Always be sure that DEBUG is set to ```False``` when in production!**
 
 Next, enter the ```wpiaiaasite``` directory and initialize the database.
 ```
