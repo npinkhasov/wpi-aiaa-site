@@ -2,16 +2,16 @@
  This is a website and wiki for WPI AIAA.  It is written in Python using Django.  
  
  ## Development
- To develop the site on your computer, you must first have Python 3.6 or greater installed.  It is also strongly recomended that, if you don't have experience with it already, you go and learn Django first.
+ To develop the site on your computer, you must first have Python 3.6 or greater installed.  It is also strongly recommended that, if you don't have experience with it already, you go and learn Django first.
  
- The first step is to clone the repository using Github desktop or whatever your prefered cloning method is.  Following this, navigate to the project directory ```wpi-aiaa-site``` and open a command prompt or powershell window.
+ The first step is to clone the repository using Github desktop or whatever your preferred cloning method is.  Following this, navigate to the project directory ```wpi-aiaa-site``` and open a command prompt or powershell window.
  
  First you must create a virtual environment.  This can be done with the following command.  
  ```
  python -m venv env
  ```
  
- Next, start yoru virtual environment.  After you do this, you should see ```(env)``` at the start of each command line.  You will need to do this everytime you want to run the test server.  
+ Next, start your virtual environment.  After you do this, you should see ```(env)``` at the start of each command line.  You will need to do this every time you want to run the test server.  
  ### On Windows
  ```
  cd env/Scripts
@@ -28,7 +28,7 @@
  pip install -r requirements.txt
  ```
  
-For essier debuging, enable DEBUG in the settings.  To do this, navigate to ```wpiaiaasite/wpiaiaasite/settings.py``` and set ```DEBUG``` to ```True```.  
+For easier debugging, enable DEBUG in the settings.  To do this, navigate to ```wpiaiaasite/wpiaiaasite/settings.py``` and set ```DEBUG``` to ```True```.  
 **Do not push this change to the server as this would create a security issue.**
 
 Next, enter the ```wpiaiaasite``` directory and initialize the database.
@@ -43,7 +43,7 @@ python manage.py migrate
  ```
 
 ## Deploying to aiaa.wpi.edu
-To deploy to aiaa.wpi.edu, you must virst be on a computer on WPI's network.  You can either use a physical on campus computer or use remote desktop to connect to a virtual machine like windows.wpi.edu.  Once on a computer, open powershell (command prompt does not work for this) and enter the following command to ssh into aiaa.wpi.edu.
+To deploy to aiaa.wpi.edu, you must first be on a computer on WPI's network.  You can either use a physical on campus computer or use remote desktop to connect to a virtual machine like windows.wpi.edu.  Once on a computer, open powershell (command prompt does not work for this) and enter the following command to ssh into aiaa.wpi.edu.
 **Before deploying, ensure that ```DEBUG``` is set to ```False```!**
 
 ```
