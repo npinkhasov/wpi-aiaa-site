@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
         <a class="navbar-brand" href="{% url 'hprc:index' %}">
             <img src="{% static 'hprc/img/hprc logo white.png' %}" alt="WPI AIAA" height="50" />
         </a>
@@ -39,7 +39,7 @@
                     <div class="dropdown-menu" aria-labelledby="projectsLabel">
                         <a class="dropdown-item" href="{% url 'hprc:construction' %}">2021, Sirius and Polaris</a>
                         <a class="dropdown-item" href="{% url 'hprc:construction' %}">2020, Project Goddard</a>
-                        <a class="dropdown-item" href="{% url 'hprc:construction' %}">2019, G.O.A.T.S</a>
+                        <a class="dropdown-item" href="{% url 'hprc:goats' %}">2019, G.O.A.T.S</a>
                     </div>
                 </li>
                 <a class="nav-link {% if nbar == 'sponsors' %}active{% endif %}"
@@ -58,7 +58,6 @@
     <div class="text-justify">{% block content %}{% endblock %}</div>
     <br class="mb-5" />
     <br class="mb-5" />
-    <br class="mb-5" />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -66,7 +65,7 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
 </body>
-<footer class="w-100" style="position: fixed; bottom: 0; left: 0">
+<footer class="w-100 shadow" style="position: fixed; bottom: 0; left: 0">
     <div class="w-100 p-3 text-right text-light bg-primary">
         <a class="btn btn-outline-light btn-sm mt-0 me-2 float-left" href="{% url 'home:index' %}" role="button">WPI
             AIAA</a>
