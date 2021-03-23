@@ -21,19 +21,18 @@ def team(request):
     context = {'nbar': 'team'}
     return render(request, "hprc/team.html", context)
     
-def goats(request):
+def goddard(request):
     context = {
         'nbar': "projects",
-        "project_title": "G.O.A.T.S",
-        "year": "2018-2019",
-        "lead_text": "WPI's first year competing in USLI",
+        "project_title": "Project Goddard",
+        "year": "2019-2020",
         "docs": {
-            "Proposal": "link",
-            "Preliminary Design Review": "link",
-            "Comprehensive Design Review": "link",
-            "Flight Readiness Review": "link",
-            "Post-Launch Assessment Review": "link",
+            "Proposal": "hprc/goddard/Worcester Polytechnic Institute - 2020 - Proposal.pdf",
+            "Preliminary Design Review": "hprc/goddard/Worcester Polytechnic Institute - 2020 - PDR Report.pdf",
+            "Comprehensive Design Review": "hprc/goddard/Worcester Polytechnic Institute - 2020 - CDR Report.pdf",
+            "Flight Readiness Review": "hprc/goddard/Worcester Polytechnic Institute - 2020 - FRR Report.pdf",
         },
+        "photos": "https://photos.app.goo.gl/nweEEhFTJYfKczVr8",
         "sponsors": {
             "Platinum": [
                 "Jones Machine Company"
@@ -44,11 +43,126 @@ def goats(request):
                 "Consulting Structural Engineering Inc.",
             ]
         },
-        "image": 'hprc/img/officers/rocketlead.jpg',
+        "image": 'hprc/goddard/testflight.jpg',
+        "caption": "The team takes a group photo right before Phoenix takes flight over Lake Winnipesaukee.",
         "text": [
-            "Our first Launch Vehicle named Batman, was designed to reach an apogee of approximately 4094 ft on the motor picked for launch. The Launch Vehicle split into four main sections over the course of its decent and each tethered section was designed to have a GPS, totaling 3 GPS devices. Upon full separation, the sections were defined as the upper airframe, the lower airframe, the payload retention system, which are all tethered together, and the nose cone. Housed within the upper airframe was the payload retention system made of airframe tubing dedicated to housing the selected payload for the duration of its flight. The vehicle had three parachutes, a nose cone parachute, drogue parachute and main parachute. The launch vehicle’s flight data was recorded using a Raven 3 Altimeter that was housed in the electronics bay.",
-            "Our selected design for our payload, named Robin, was a quadrotor UAV housed within a cylindrical retention system composed of Blue Tube. The tube held the UAV as well as a 3D printed base to hold the UAV in place and was to be ejected from the rocket during descent. When activated, the system was designed to unfold, opening its four arms to right itself in the process to deploy the UAV. This unfolding design allowed for a very simplistic and reliable system, containing few moving parts to minimize points of failure as well as being highly spatially efficient.",
-            
-        ]
+            (
+                "Begining the second year of the team, WPI USLI (HPRC's former team name) now had some experience.  "
+                "With a better understanding of the competition, team organization was overhauled bringing new "
+                "officer positions, more streamlined report writing, and an even larger team.  This year's project "
+                "was designated Project Goddard, named after Robert Goddard, the father of modern rocketry and "
+                "one of WPI's most famed alumni.  "
+            ),
+            (
+                "The team's second launch vehicle, named Phoenix, measured 111 in long and was built out of 6 in "
+                "BlueTube.  Flying on an L1050 solid rocket motor, it was projected to reach an apogee of 4088 ft.  "
+                "The vehicle embodied the many lessons learned in the team's first year.  Gone was last year's heavy "
+                "fin cane.  It was replaced with a light weight and 3D printed bracket set that held in " 
+                "place a set of four custom made foam core carbon fibre fins.  Last year's electronics bay, which took "
+                "more than an hour of prep time at the launch site, was redone with a twist lock mechanism that could be "
+                "assembled in minutes.  These and many other changes put the teams new knowledge to good use."
+            ),
+            (
+                "The goal of the payload, named Icarus was to mechanically retain and deploy an Unmanned Arial Vehicle "
+                "(UAV) to collect a sample from a designated area. In order to perform this function, we have "
+                "designed a lead screw driven retention system which orients and lift the UAV out of the rocket body "
+                "and an unfolding drone capable of collecting a 15ml sample.  Compared with last year's design, Icarus "
+                "was essier to manufacture thanks to smart meterials choices and performed well in test missions."
+            ),
+            (
+                "Phoenix and Icarus flew one test flight from Lake Winnipesaukee in February.  Unfortunately a manufacturing "
+                "defect in the motor the team bought caused the vehicle to underperform and not reach the expected apogee.  "
+                "Outside of that, the vehicle performed excellently and proved to require significantly less prep time at the "
+                "launch site in order to fly.  "
+                "While the team was excited to return to Huntsville with our new and improved rocket and payload, the competition "
+                "was cancelled due to the outbreak of the COVID-19 pandemic.  Despite this, the team learned a lot, gained new "
+                "sponsors, and became well prepared for future years."
+            )
+        ],
+        "officers": {
+            "Captain": "Christian M. Schrader",
+            "Rocket Lead": "Sophie Balkind",
+            "Payload Lead": "Thierry de Crespingy",
+            "Safety Officer": "Veronika Karshina",
+            "Treasurer": "Kirsten Bowers",
+            "Logistics Officer": "Troy Otter",
+            "Philanthropy Officer": "Adrianne Curtis",
+            "Documentation Officer": "Jeremiah Valero",
+            "Outreach Officer": "Connor Walsh",
+            "Social Media Officer": "Christopher Renfro", 
+        }
+    }
+    return render(request, "hprc/project.html", context)
+
+def goats(request):
+    context = {
+        'nbar': "projects",
+        "project_title": "G.O.A.T.S",
+        "year": "2018-2019",
+        "docs": {
+            "Proposal": "hprc/goats/Worcester Polytechnic Institute - 2019 - Proposal.pdf",
+            "Preliminary Design Review": "hprc/goats/Worcester Polytechnic Institute - 2019 - PDR Report.pdf",
+            "Comprehensive Design Review": "hprc/goats/Worcester Polytechnic Institute - 2019 - CDR Report.pdf",
+            "Flight Readiness Review": "hprc/goats/Worcester Polytechnic Institute - 2019 - FRR Report.pdf",
+            "Post-Launch Assessment Review": "hprc/goats/Worcester Polytechnic Institute - 2019 - PLAR Report.pdf",
+        },
+        "photos": "https://photos.app.goo.gl/kshVddRy9KsDYAGA6",
+        "sponsors": {
+            "Silver": [
+                "Hydrocutter Inc.",
+            ]
+        },
+        "image": 'hprc/goats/fair.jpg',
+        "caption": "The team presenting their rocket and payload at the NASA SLI rocket fair.",
+        "text": [
+            (
+                "While WPI had competed in rocketry competitions previously, namely Battle of the Rockets, "
+                "HPRC as we know it today was first founded in 2018 as WPI University Student Launch Initiative (USLI). "
+                "After pitching the project to the AIAA "
+                "Officer Board, the team received its initial funding.  The project name, G.O.A.T.S was selected for WPI's "
+                "mascot, Gompie the goat, in addition to the fact that we just like acronyms.  Having just started out, the members "
+                "of the team weren't that experienced.  The officers were mostly sophomores leading a large "
+                "group of mostly freshmen.  Despite this, the team spent the year learning and overcoming "
+                "challenges at every step.  They submitted their first design reviews, solved unexpected "
+                "vehicle packing problems at their subscale launch, and even rebuilt the entire lower airframe "
+                "in a week after its loss due to bulkhead failure on its first test flight."
+            ),
+            (
+                "While not every rookie team makes it to launch week, WPI got there through beating many tough "
+                "challenges.  Ultimately, when the team's rocket took flight at the competition launch in Huntsville, "
+                "it was destroyed at around 800ft due to a defect in the motor the team purchased.  While it may have "
+                "been disapointing, the team still returned home excited.  The members learned a lot from meeting with "
+                "other teams and NASA engineers and was already brainstorming new ideas for next year before launch week "
+                "was over.  The first year wasn't perfect, but it cemented the team as WPI's premeir rocketry team."
+            ),
+            (
+                "Our first Launch Vehicle named, Batman, was designed to reach an apogee of approximately" 
+                "4094 ft on the motor picked for launch. The Launch Vehicle split into four main sections "
+                "over the course of its decent and each tethered section was designed to have a GPS, totaling "
+                "3 GPS devices. Upon full separation, the sections were defined as the upper airframe, the lower "
+                "airframe, the payload retention system, which are all tethered together, and the nose cone. "
+                "Housed within the upper airframe was the payload retention system made of airframe tubing "
+                "dedicated to housing the selected payload for the duration of its flight. The vehicle had three "
+                "parachutes, a nose cone parachute, drogue parachute and main parachute. The launch vehicle’s "
+                "flight data was recorded using a Raven 3 Altimeter that was housed in the electronics bay."
+            ),
+            (
+                "Our selected design for our payload, named Robin, was a quadrotor UAV housed within a cylindrical "
+                "retention system composed of Blue Tube. The tube held the UAV as well as a 3D printed base to hold "
+                "the UAV in place and was to be ejected from the rocket during descent. When activated, the system "
+                "was designed to unfold, opening its four arms to right itself in the process to deploy the UAV. "
+                "This unfolding design allowed for a very simplistic and reliable system, containing few moving parts "
+                "to minimize points of failure as well as being highly spatially efficient."
+            ),
+        ],
+        "officers": {
+            "Captain": "Caroline Kuhnle",
+            "Systems Integration/Rocket Lead": "Krystina Waters",
+            "Safety Officer": "Christian M. Schrader",
+            "Payload Lead": "Peter Dentch",
+            "Logistics Officer": "Jacob Koslow",
+            "Outreach Officer 1": "Christopher Renfro",
+            "Outreach Officer 2": "Ian Scott",
+        }
     }
     return render(request, "hprc/project.html", context)

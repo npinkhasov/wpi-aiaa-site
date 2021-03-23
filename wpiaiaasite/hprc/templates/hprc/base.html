@@ -38,14 +38,12 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="projectsLabel">
                         <a class="dropdown-item" href="{% url 'hprc:construction' %}">2021, Sirius and Polaris</a>
-                        <a class="dropdown-item" href="{% url 'hprc:construction' %}">2020, Project Goddard</a>
+                        <a class="dropdown-item" href="{% url 'hprc:goddard' %}">2020, Project Goddard</a>
                         <a class="dropdown-item" href="{% url 'hprc:goats' %}">2019, G.O.A.T.S</a>
                     </div>
                 </li>
                 <a class="nav-link {% if nbar == 'sponsors' %}active{% endif %}"
                     href="{% url 'hprc:sponsors' %}">Sponsors</a>
-                <a class="nav-link {% if nbar == 'team' %}active{% endif %}"
-                    href="{% url 'hprc:construction' %}">Resources</a>
                 <a class="nav-link {% if nbar == 'team' %}active{% endif %}" href="{% url 'hprc:team' %}">Team</a>
             </ul>
             <ul class="navbar-nav ml-auto">
