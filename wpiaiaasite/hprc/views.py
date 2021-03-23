@@ -21,6 +21,69 @@ def team(request):
     context = {'nbar': 'team'}
     return render(request, "hprc/team.html", context)
     
+def sirius(request):
+    context = {
+        'nbar': "projects",
+        "project_title": "Sirius and Polaris",
+        "year": "2020-2021",
+        "docs": {
+            "Proposal": "hprc/sirius/WPI HPRC Proposal 2021.pdf",
+            "Preliminary Design Review": "hprc/sirius/WPI HPRC PDR 2021.pdf",
+            "Critical Design Review": "hprc/sirius/WPI HPRC CDR 2021.pdf",
+            # "Flight Readiness Review": "hprc/goddard/Worcester Polytechnic Institute - 2020 - FRR Report.pdf",
+        },
+        # "photos": "https://photos.app.goo.gl/nweEEhFTJYfKczVr8",
+        "sponsors": {
+            "Gold": [
+                "Tinker Box",
+                "Ensign-Bickford Aerospace & Defense"
+            ],
+            "Bronze": [
+                "Test Devices Inc.",
+                "Consulting Structural Engineering Inc.",
+            ]
+        },
+        "image": 'hprc/sirius/cnc.jpg',
+        "caption": "A member prepares fixtures in a CNC mill before machining components for the motor retention.",
+        "text": [
+            (
+                "Entering their third year, WPI USLI made the decision to rebrand to the High Power Rocketry Club (HPRC).  "
+                "This year was uniquely challenging as the COVID-19 pandemic prevented the majority in person meetings.  "
+                "While the team initially continued to compete in NASA Student Launch, the competition was dropped in December "
+                "as there was no way for the team to fulfill launch requirements while staying in compliance with WPI's and the CDC's "
+                "COVID safety guildines.  Despite this, the team continued designing and building our rocket and payload.  There is "
+                "still a lot to learn by flying the mission, even if its not at the competition."
+            ),
+            (
+                "The team's rocket, Sirius, continues to build upon the experience gained in the past two competition years. "
+                "It contains many new systems such as internal mounted motor retention, an airbrake system, and a custom "
+                "avionics board.  The vehicle has a predicted apogee of 4934 ft but has a target apogee of 4550 ft.  "
+                "To ensure there is no overshoot, the airbrake system is actively controlled by the avionics to produce "
+                "just enough drag to reduce the vehicle's apogee to the target."
+            ),
+            (
+                "Polaris, the vehicle's payload, is a lander.  After being ejected from the vehicle during descent, Polaris "
+                "lands under its own parachute before engaging its self righting system which rights the payload from any "
+                "orientation using a set of outward folding petals.  This is more finely adjusted by the stabilization system "
+                "which uses a set of legs that deploy to get the payload within 5 degrees of level on uneven terrain.  Finally, "
+                "it takes a panoramic photo using its top mounted camera before transmitting it back to a ground station."
+            )
+        ],
+        "officers": {
+            "Captain": "Kirsten Bowers",
+            "Rocket Lead": "Troy Otter",
+            "Payload Lead": "Thierry de Crespingy",
+            "Safety Officer": "Michael Beskid",
+            "Treasurer": "Kevin Schultz",
+            "Logistics Officer": "Nikita Jagdish",
+            "Sponsorship Officer": "Julia Sheats",
+            "Documentation Officer": "Christian M. Schrader",
+            "Outreach Officer": "Connor Walsh",
+            "Public Relations Officer": "Christopher Davenport", 
+        }
+    }
+    return render(request, "hprc/project.html", context)
+
 def goddard(request):
     context = {
         'nbar': "projects",
@@ -29,7 +92,7 @@ def goddard(request):
         "docs": {
             "Proposal": "hprc/goddard/Worcester Polytechnic Institute - 2020 - Proposal.pdf",
             "Preliminary Design Review": "hprc/goddard/Worcester Polytechnic Institute - 2020 - PDR Report.pdf",
-            "Comprehensive Design Review": "hprc/goddard/Worcester Polytechnic Institute - 2020 - CDR Report.pdf",
+            "Critical Design Review": "hprc/goddard/Worcester Polytechnic Institute - 2020 - CDR Report.pdf",
             "Flight Readiness Review": "hprc/goddard/Worcester Polytechnic Institute - 2020 - FRR Report.pdf",
         },
         "photos": "https://photos.app.goo.gl/nweEEhFTJYfKczVr8",
@@ -102,7 +165,7 @@ def goats(request):
         "docs": {
             "Proposal": "hprc/goats/Worcester Polytechnic Institute - 2019 - Proposal.pdf",
             "Preliminary Design Review": "hprc/goats/Worcester Polytechnic Institute - 2019 - PDR Report.pdf",
-            "Comprehensive Design Review": "hprc/goats/Worcester Polytechnic Institute - 2019 - CDR Report.pdf",
+            "Critical Design Review": "hprc/goats/Worcester Polytechnic Institute - 2019 - CDR Report.pdf",
             "Flight Readiness Review": "hprc/goats/Worcester Polytechnic Institute - 2019 - FRR Report.pdf",
             "Post-Launch Assessment Review": "hprc/goats/Worcester Polytechnic Institute - 2019 - PLAR Report.pdf",
         },
