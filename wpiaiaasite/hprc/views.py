@@ -40,7 +40,7 @@ def sirius(request):
             ],
             "Bronze": [
                 "Test Devices Inc.",
-                "Consulting Structural Engineering Inc.",
+                "Consulting Structural Engineer Inc.",
             ]
         },
         "image": 'hprc/sirius/cnc.jpg',
@@ -51,8 +51,8 @@ def sirius(request):
                 "This year was uniquely challenging as the COVID-19 pandemic prevented the majority in person meetings.  "
                 "While the team initially continued to compete in NASA Student Launch, the competition was dropped in December "
                 "as there was no way for the team to fulfill launch requirements while staying in compliance with WPI's and the CDC's "
-                "COVID safety guildines.  Despite this, the team continued designing and building our rocket and payload.  There is "
-                "still a lot to learn by flying the mission, even if its not at the competition."
+                "COVID safety guidelines.  Despite this, the team continued designing and building our rocket and payload.  There is "
+                "still a lot to learn by flying the mission, even if it's not at the competition."
             ),
             (
                 "The team's rocket, Sirius, continues to build upon the experience gained in the past two competition years. "
@@ -63,7 +63,7 @@ def sirius(request):
             ),
             (
                 "Polaris, the vehicle's payload, is a lander.  After being ejected from the vehicle during descent, Polaris "
-                "lands under its own parachute before engaging its self righting system which rights the payload from any "
+                "lands under its own parachute before engaging it's self righting system which rights the payload from any "
                 "orientation using a set of outward folding petals.  This is more finely adjusted by the stabilization system "
                 "which uses a set of legs that deploy to get the payload within 5 degrees of level on uneven terrain.  Finally, "
                 "it takes a panoramic photo using its top mounted camera before transmitting it back to a ground station."
@@ -103,14 +103,14 @@ def goddard(request):
             "Bronze": [
                 "Test Devices Inc.",
                 "Plasma Technology Inc.",
-                "Consulting Structural Engineering Inc.",
+                "Consulting Structural Engineer Inc.",
             ]
         },
         "image": 'hprc/goddard/testflight.jpg',
         "caption": "The team takes a group photo right before Phoenix takes flight over Lake Winnipesaukee.",
         "text": [
             (
-                "Begining the second year of the team, WPI USLI (HPRC's former team name) now had some experience.  "
+                "Beginning the second year of the team, WPI USLI (HPRC's former team name) now had some experience.  "
                 "With a better understanding of the competition, team organization was overhauled bringing new "
                 "officer positions, more streamlined report writing, and an even larger team.  This year's project "
                 "was designated Project Goddard, named after Robert Goddard, the father of modern rocketry and "
@@ -118,28 +118,28 @@ def goddard(request):
             ),
             (
                 "The team's second launch vehicle, named Phoenix, measured 111 in long and was built out of 6 in "
-                "BlueTube.  Flying on an L1050 solid rocket motor, it was projected to reach an apogee of 4088 ft.  "
+                "Blue Tube 2.0.  Flying on an L1050 solid rocket motor, it was projected to reach an apogee of 4088 ft.  "
                 "The vehicle embodied the many lessons learned in the team's first year.  Gone was last year's heavy "
                 "fin cane.  It was replaced with a light weight and 3D printed bracket set that held in " 
-                "place a set of four custom made foam core carbon fibre fins.  Last year's electronics bay, which took "
+                "place a set of four custom made foam core carbon-fiber fins.  Last year's electronics bay, which took "
                 "more than an hour of prep time at the launch site, was redone with a twist lock mechanism that could be "
-                "assembled in minutes.  These and many other changes put the teams new knowledge to good use."
+                "assembled in minutes.  These and many other changes put the team's new knowledge to good use."
             ),
             (
                 "The goal of the payload, named Icarus was to mechanically retain and deploy an Unmanned Arial Vehicle "
-                "(UAV) to collect a sample from a designated area. In order to perform this function, we have "
+                "(UAV) to collect a sample from a designated area. In order to perform this function, we "
                 "designed a lead screw driven retention system which orients and lift the UAV out of the rocket body "
                 "and an unfolding drone capable of collecting a 15ml sample.  Compared with last year's design, Icarus "
-                "was essier to manufacture thanks to smart meterials choices and performed well in test missions."
+                "was easier to manufacture thanks to smart material choices and performed well in test missions."
             ),
             (
-                "Phoenix and Icarus flew one test flight from Lake Winnipesaukee in February.  Unfortunately a manufacturing "
+                "Phoenix and Icarus flew one test flight from Lake Winnipesaukee in February.  Unfortunately, a manufacturing "
                 "defect in the motor the team bought caused the vehicle to underperform and not reach the expected apogee.  "
                 "Outside of that, the vehicle performed excellently and proved to require significantly less prep time at the "
                 "launch site in order to fly.  "
                 "While the team was excited to return to Huntsville with our new and improved rocket and payload, the competition "
                 "was cancelled due to the outbreak of the COVID-19 pandemic.  Despite this, the team learned a lot, gained new "
-                "sponsors, and became well prepared for future years."
+                "sponsors and became well prepared for future years."
             )
         ],
         "officers": {
@@ -194,9 +194,9 @@ def goats(request):
                 "While not every rookie team makes it to launch week, WPI got there through beating many tough "
                 "challenges.  Ultimately, when the team's rocket took flight at the competition launch in Huntsville, "
                 "it was destroyed at around 800ft due to a defect in the motor the team purchased.  While it may have "
-                "been disapointing, the team still returned home excited.  The members learned a lot from meeting with "
-                "other teams and NASA engineers and was already brainstorming new ideas for next year before launch week "
-                "was over.  The first year wasn't perfect, but it cemented the team as WPI's premeir rocketry team."
+                "been disappointing, the team still returned home excited.  The members learned a lot from meeting with "
+                "other teams and NASA engineers and were already brainstorming new ideas for next year before launch week "
+                "was over.  The first year wasn't perfect, but it cemented the team as WPI's premier rocketry team."
             ),
             (
                 "Our first Launch Vehicle named, Batman, was designed to reach an apogee of approximately" 
