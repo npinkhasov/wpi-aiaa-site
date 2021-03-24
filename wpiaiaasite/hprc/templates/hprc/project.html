@@ -1,9 +1,9 @@
 {% extends "hprc/base.html" %}
 {% load static %}
 {% block content %}
-<div class="container-fluid bg-primary">
+<div class="container-fluid bg-primary ">
     <div class="row " style="min-height: 98vh;">
-        <div class="col-md-3 mt-5 text-center text-light">
+        <div class="col-md-3 mt-5 text-center text-light ">
             <h3 class="pt-3">
                 Sponsors
             </h3>
@@ -33,7 +33,7 @@
             </div>
             {% endif %}
         </div>
-        <div class="col-md-9 bg-light p-0 ">
+        <div class="col-md-9 bg-light p-0 shadow-lg">
             <div class="pl-5 ">
                 <h1 class="display-3 mt-5">{{project_title}} </h1>
                 <p class="ml-2 lead">{{year}}</p>
@@ -44,7 +44,7 @@
                 <div class="pl-5" style="float: right; display: block; width: 40%;">
                     <img class="float-right img-fluid rounded m-3" style="width: 100%;" src="{% static image %}"
                         alt="{{caption}}" />
-                    <p class="muted text-center">{{caption}}</p>
+                    <p class="muted text-left">{{caption}}</p>
                 </div>
 
                 <!-- <figure class="figure " style="display:inline; float: right;">
