@@ -35,7 +35,7 @@ def sirius(request):
         # "photos": "https://photos.app.goo.gl/nweEEhFTJYfKczVr8",
         "sponsors": {
             "Gold": [
-                "Tinker Box",
+                "WPI Tinkerbox",
                 "Ensign-Bickford Aerospace & Defense"
             ],
             "Bronze": [
