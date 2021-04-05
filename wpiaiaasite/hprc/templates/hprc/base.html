@@ -32,8 +32,8 @@
                 <a class="nav-link {% if nbar == 'home' %}active{% endif %}" aria-current="page"
                     href="{% url 'hprc:index' %}">Home</a>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="projectsLabel" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle {% if nbar == 'projects' %}active{% endif %}" href=" #"
+                        id="projectsLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Projects
                     </a>
                     <div class="dropdown-menu" aria-labelledby="projectsLabel">
@@ -54,7 +54,8 @@
         </div>
     </nav>
     <div style="height: 76px;"></div>
-    <div style="min-height: calc(100vh - 132px);"> <!-- 76px header + 56px footer = 120px -->
+    <div style="min-height: calc(100vh - 132px);">
+        <!-- 76px header + 56px footer = 120px -->
         <div class="text-justify">{% block content %}{% endblock %}</div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
