@@ -199,7 +199,7 @@ def goats(request):
                 "was over.  The first year was not perfect, but it cemented the team as WPI's premier rocketry team."
             ),
             (
-                "Our first launch vehicle named, Batman, was designed to reach an apogee of approximately" 
+                "Our first launch vehicle named, Batman, was designed to reach an apogee of approximately " 
                 "4094 ft on the motor picked for launch. The launch vehicle split into four independent sections "
                 "over the course of its decent. Upon full separation, the sections were defined as the upper airframe, the lower "
                 "airframe, the payload retention system, which are all tethered together, and the nose cone, which descended seperately. "
