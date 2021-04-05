@@ -1,14 +1,14 @@
 /* 
     This style sheet should comply with the AIAA
     Brand Standards.  For details on how,
-    to maintain compatability, see the AIAA
+    to maintain compatibility, see the AIAA
     Brand Standard Manual.
 
     https://www.aiaa.org/docs/default-source/uploadedfiles/about-aiaa/branding-and-logo/brandstandardmanual-v7-10.pdf?sfvrsn=bc4445cd_0
 */
 /*
     FONTS
-    A variety of AIAA approved fonts are availible in 
+    A variety of AIAA approved fonts are available in 
     the fonts directory. Futura is the primary 
     sans-serif font of the AIAA. It should be the 
     primary font. If for whatever reason, you need
@@ -56,6 +56,7 @@ h4,
 h5,
 h6 {
     font-family: futura;
+    text-align: left;
 }
 
 p {
@@ -79,3 +80,4 @@ p {
     width: 20%;
     border-radius: 50%;
 }
+ 
