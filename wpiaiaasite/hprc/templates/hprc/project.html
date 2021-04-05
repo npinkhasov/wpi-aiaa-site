@@ -4,19 +4,19 @@
 <div class="container-fluid bg-primary ">
     <div class="row " style="min-height: 98vh;">
         <div class="col-md-3 mt-5 text-center text-light ">
-            <h3 class="pt-3">
+            <h3 class="pt-3 text-center">
                 Sponsors
             </h3>
             <hr color="white">
             {% for tier, companies in sponsors.items %}
             <div>
-                <h4>{{tier}}</h4>
+                <h4 class="text-center">{{tier}}</h4>
                 {% for company in companies %}
                 <p>{{company}}</p>
                 {% endfor %}
             </div>
             {% endfor %}
-            <h3 class="pt-3">
+            <h3 class="pt-3 text-center">
                 Documents
             </h3>
             <hr color="white">
