@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary shadow">
         <a class="navbar-brand" href="{% url 'hprc:index' %}">
             <img src="{% static 'hprc/img/hprc logo white.png' %}" alt="WPI AIAA" height="50" />
         </a>
@@ -32,20 +32,18 @@
                 <a class="nav-link {% if nbar == 'home' %}active{% endif %}" aria-current="page"
                     href="{% url 'hprc:index' %}">Home</a>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="projectsLabel" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle {% if nbar == 'projects' %}active{% endif %}" href=" #"
+                        id="projectsLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Projects
                     </a>
                     <div class="dropdown-menu" aria-labelledby="projectsLabel">
-                        <a class="dropdown-item" href="{% url 'hprc:construction' %}">2021, Sirius and Polaris</a>
-                        <a class="dropdown-item" href="{% url 'hprc:construction' %}">2020, Project Goddard</a>
+                        <a class="dropdown-item" href="{% url 'hprc:sirius' %}">2021, Sirius and Polaris</a>
+                        <a class="dropdown-item" href="{% url 'hprc:goddard' %}">2020, Project Goddard</a>
                         <a class="dropdown-item" href="{% url 'hprc:goats' %}">2019, G.O.A.T.S</a>
                     </div>
                 </li>
                 <a class="nav-link {% if nbar == 'sponsors' %}active{% endif %}"
                     href="{% url 'hprc:sponsors' %}">Sponsors</a>
-                <a class="nav-link {% if nbar == 'team' %}active{% endif %}"
-                    href="{% url 'hprc:construction' %}">Resources</a>
                 <a class="nav-link {% if nbar == 'team' %}active{% endif %}" href="{% url 'hprc:team' %}">Team</a>
             </ul>
             <ul class="navbar-nav ml-auto">
@@ -55,9 +53,11 @@
             </ul>
         </div>
     </nav>
-    <div class="text-justify">{% block content %}{% endblock %}</div>
-    <br class="mb-5" />
-    <br class="mb-5" />
+    <div style="height: 76px;"></div>
+    <div style="min-height: calc(100vh - 132px);">
+        <!-- 76px header + 56px footer = 120px -->
+        <div class="text-justify">{% block content %}{% endblock %}</div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -65,7 +65,7 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
 </body>
-<footer class="w-100 shadow" style="position: fixed; bottom: 0; left: 0">
+<footer class="w-100 shadow">
     <div class="w-100 p-3 text-right text-light bg-primary">
         <a class="btn btn-outline-light btn-sm mt-0 me-2 float-left" href="{% url 'home:index' %}" role="button">WPI
             AIAA</a>

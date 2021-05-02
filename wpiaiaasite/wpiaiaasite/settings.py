@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # If running on the real server, prevents debug mode.
 if not DEBUG or os.path.realpath(__file__) == "/home/administrator/wpiaiaasite/wpiaiaasite/settings.py":

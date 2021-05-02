@@ -1,42 +1,73 @@
 {% extends "hprc/base.html" %}
 {% load static %}
 {% block content %}
-<div class="container-fluid bg-primary">
+<div class="container-fluid bg-primary ">
     <div class="row " style="min-height: 98vh;">
-        <div class="col-md-3 mt-5 text-center text-light">
-            <h3 class="pt-3">
+        <div class="col-md-3 mt-5 text-center text-light ">
+            <h3 class="pt-3 text-center">
                 Sponsors
             </h3>
             <hr color="white">
             {% for tier, companies in sponsors.items %}
             <div>
-                <h4>{{tier}}</h4>
+                <h4 class="text-center">{{tier}}</h4>
                 {% for company in companies %}
                 <p>{{company}}</p>
                 {% endfor %}
             </div>
             {% endfor %}
-            <h3 class="pt-3">
+            <h3 class="pt-3 text-center">
                 Documents
             </h3>
             <hr color="white">
             {% for name, link in docs.items %}
             <div>
-                <a href="{{link}}" class="m-1 btn btn-outline-light btn-lg" style="width: 80%;">{{name}}</a>
+                <a href="{% static link %}" target="_blank" class="m-1 btn btn-outline-light btn-lg"
+                    style="width: 80%;">{{name}}</a>
             </div>
             {% endfor %}
+            {% if photos %}
+            <div>
+                <a target="_blank" href="{{photos}}" class="m-1 btn btn-outline-light btn-lg"
+                    style="width: 80%;">Photos</a>
+            </div>
+            {% endif %}
         </div>
-        <div class="col-md-9 bg-light p-0 ">
-            <div class="pl-5">
-                <h1 class="display-3 mt-5">{{project_title}}</h1>
+        <div class="col-md-9 bg-light p-0 shadow-lg">
+            <div class="pl-5 ">
+                <h1 class="display-3 mt-5">{{project_title}} </h1>
+                <p class="ml-2 lead">{{year}}</p>
                 <hr />
-                <p class="lead">
+                <!-- <p class="lead">
                     {{lead_text}}
-                </p>
-                <img class="float-right rounded m-3" style="width:35%;" src="{% static image %}" alt="Rocket Lead" />
+                </p> -->
+                <div class="pl-5" style="float: right; display: block; width: 40%;">
+                    <img class="float-right img-fluid rounded m-3" style="width: 100%;" src="{% static image %}"
+                        alt="{{caption}}" />
+                    <p class="muted text-left">{{caption}}</p>
+                </div>
+
+                <!-- <figure class="figure " style="display:inline; float: right;">
+                    <img class="figure-img img-fluid rounded m-3" style="width:35%;" src="{% static image %}"
+                        alt="{{caption}}" />
+                    <figcaption class="figure-caption">{{caption}}</figcaption>
+                </figure> -->
                 {% for paragraph in text %}
                 <p>{{paragraph}}</p>
                 {% endfor %}
+                <br>
+                <h2>Officer Board</h2>
+                <hr>
+                <div class="container-fluid row justify-content-center">
+                    {% for position, name in officers.items %}
+                    <div class="col-sm-3 p-3">
+                        <h4>{{name}}</h4>
+                        <i>
+                            <h5>{{position}}</h5>
+                        </i>
+                    </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>
