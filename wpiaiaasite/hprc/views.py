@@ -41,6 +41,7 @@ def sirius(request):
             "Bronze": [
                 "Test Devices Inc.",
                 "Consulting Structural Engineer Inc.",
+                "HydroCutter"
             ]
         },
         "image": 'hprc/sirius/cnc.jpg',
