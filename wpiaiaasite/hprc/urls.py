@@ -13,4 +13,5 @@ urlpatterns = [
     path("sirius", views.sirius, name="sirius"),
     path("goddard", views.goddard, name="goddard"),
     path("GOATS", views.goats, name="goats"),
+    path("contact", views.contact, name="contact"),
 ]
