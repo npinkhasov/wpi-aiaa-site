@@ -33,10 +33,12 @@ def sirius(request):
         "docs": {
             "Proposal": "hprc/sirius/WPI HPRC Proposal 2021.pdf",
             "Preliminary Design Review": "hprc/sirius/WPI HPRC PDR 2021.pdf",
+            "PDR Presentation": "hprc/sirius/WPI HPRC PDR Presentation 2021.pdf",
             "Critical Design Review": "hprc/sirius/WPI HPRC CDR 2021.pdf",
+            "CDR Presentation": "hprc/sirius/WPI HPRC CDR Presentation 2021.pdf",
             # "Flight Readiness Review": "hprc/goddard/Worcester Polytechnic Institute - 2020 - FRR Report.pdf",
         },
-        # "photos": "https://photos.app.goo.gl/nweEEhFTJYfKczVr8",
+        "photos": "https://photos.app.goo.gl/w3eEeHMk1ChAUU8x5",
         "sponsors": {
             "Gold": [
                 "WPI Tinkerbox",
@@ -48,8 +50,8 @@ def sirius(request):
                 "HydroCutter"
             ]
         },
-        "image": 'hprc/sirius/cnc.jpg',
-        "caption": "A member prepares fixtures in a CNC mill before machining components for the motor retention.",
+        "image": 'hprc/sirius/ejection-testing.jpg',
+        "caption": "A member prepares the full-scale rocket, Sirius, for ejection testing in May 2021.",
         "text": [
             (
                 "Entering their third year, WPI USLI made the decision to rebrand to the High Power Rocketry Club (HPRC).  "
