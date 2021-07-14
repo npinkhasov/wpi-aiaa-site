@@ -52,6 +52,8 @@ def sirius(request):
         },
         "image": 'hprc/sirius/ejection-testing.jpg',
         "caption": "A member prepares the full-scale rocket, Sirius, for ejection testing in May 2021.",
+        # "video": 'hprc/sirius/main-chute.mp4',
+        # "video-caption": "test 1 2 3",
         "text": [
             (
                 "Entering their third year, WPI USLI made the decision to rebrand to the High Power Rocketry Club (HPRC).  "
