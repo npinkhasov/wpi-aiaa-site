@@ -47,20 +47,13 @@
                     <p class="muted text-left">{{caption}}</p>
                 </div>
 
-                <!-- <div class="pl-5" style="float: right; display: block; width: 40%;">
-                    <video class="float-right rounded m-3" height="300px" controls="true" alt="{{caption}}">
-                        <source src="{% static video %}">
-                    </video>
-                    <p class="muted text-left">{{caption}}</p>
-                </div> -->
-
                 <!-- <figure class="figure " style="display:inline; float: right;">
                     <img class="figure-img img-fluid rounded m-3" style="width:35%;" src="{% static image %}"
                         alt="{{caption}}" />
                     <figcaption class="figure-caption">{{caption}}</figcaption>
                 </figure> -->
                 {% for paragraph in text %}
-                <p>{{paragraph}}</p>
+                <p class="pr-3">{{paragraph}}</p>
                 {% endfor %}
                 <br>
                 <h2>Officer Board</h2>

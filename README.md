@@ -15,7 +15,7 @@
  ### On Windows
  ```
  cd env/Scripts
- activate
+ ./activate
  cd ../..
  ```
  ### On Linux or Mac

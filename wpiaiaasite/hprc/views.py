@@ -50,10 +50,8 @@ def sirius(request):
                 "HydroCutter"
             ]
         },
-        "image": 'hprc/sirius/ejection-testing.jpg',
-        "caption": "A member prepares the full-scale rocket, Sirius, for ejection testing in May 2021.",
-        # "video": 'hprc/sirius/main-chute.mp4',
-        # "video-caption": "test 1 2 3",
+        "image": 'hprc/sirius/cnc.JPG',
+        "caption": "A member prepares fixtures in a CNC mill before machining components for the motor retention.",
         "text": [
             (
                 "Entering their third year, WPI USLI made the decision to rebrand to the High Power Rocketry Club (HPRC).  "
