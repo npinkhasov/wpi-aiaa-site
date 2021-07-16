@@ -50,7 +50,7 @@ def sirius(request):
                 "HydroCutter"
             ]
         },
-        "image": 'hprc/sirius/cnc.JPG',
+        "image": 'hprc/sirius/cnc.jpg',
         "caption": "A member prepares fixtures in a CNC mill before machining components for the motor retention.",
         "text": [
             (
