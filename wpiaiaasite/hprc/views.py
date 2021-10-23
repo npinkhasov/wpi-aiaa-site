@@ -25,9 +25,9 @@ def team(request):
     context = {'nbar': 'team'}
     return render(request, "hprc/team.html", context)
 
-# def media(request):
-#     context = {'nbar': 'media'}
-#     return render(request, "hprc/media.html", context)
+def media(request):
+    context = {'nbar': 'media'}
+    return render(request, "hprc/media.html", context)
     
 def aquila(request):
     context = {
