@@ -24,7 +24,76 @@ def contact(request):
 def team(request):
     context = {'nbar': 'team'}
     return render(request, "hprc/team.html", context)
+
+# def media(request):
+#     context = {'nbar': 'media'}
+#     return render(request, "hprc/media.html", context)
     
+def aquila(request):
+    context = {
+        'nbar': "projects",
+        "project_title": "Aquila",
+        "year": "2021-2022",
+        # "docs": {},
+        "sponsors": {
+            "Platinum": [
+                "Altium Designer"
+            ],
+            "Gold": [
+                "WPI Tinkerbox",
+                "Ensign-Bickford Aerospace & Defense"
+            ],
+            "Bronze": [
+                "Astralintu",
+                "Test Devices Inc.",
+                "Collins Aerospace",
+                "Turner Construction"
+            ]
+        },
+        "image": 'hprc/aquila/interest_meeting.jpg',
+        "caption": "New members are introduced to the team mission during an interest meeting.",
+        "text": [
+            (
+                "Now in the team’s fourth year, WPI HPRC looks to reach new heights, literally and figuratively. "
+                "The team has applied to compete in the Intercollegiate Rocketry Engineering Competition (IREC) in "
+                "the 10,000 ft category, having launched rockets to 5,000 feet in previous years. Through increased "
+                "promotion in the WPI community, HPRC has gained more than 100 new members and is well-prepared to "
+                "take on the challenge of creating a more powerful rocket. This year’s project is named Aquila, "
+                "after a constellation that contains the stars Altair and Tarazed and means eagle in Latin. "
+            ),
+            (
+                "The rocket, Altair, will measure 125 inches long with a diameter of 6 inches and feature "
+                "redesigned couplers and airbrakes. The new couplers hold together parts of the airframe that "
+                "do not separate in flight by using a screw-together technique meant to provide proper stiffness "
+                "and support. The predicted apogee of the rocket is 10,437 ft using the airbrake system."
+            ),
+            (
+                "The payload, Tarazed, features an aerial vehicle that is released from the rocket during flight. "
+                "Its mission is to locate the rocket after the rocket lands using multiple search methods and "
+                "relay its position back to the ground crew. Currently, the payload is in the prototyping stage "
+                "as the team considers different designs such as a quadcopter and fixed-wing aircraft. "
+            ),
+            (
+                "The avionics board features a stacked, modular design for efficient development and easy "
+                "replacement of electronic components. Additionally, the software team is developing a detailed "
+                "ground station to store and display data transmitted from the rocket and payload during the mission. "
+            )
+        ],
+        "officers": {
+            "Captain": "Kevin Schultz",
+            "Rocket Lead": "Troy Otter",
+            "Payload Lead": "Jake Roller",
+            "Safety Officer": "Paul Coccomo",
+            "Treasurer": "Giovanni Giacalone",
+            "Logistics Officer": "Bridget Wirtz",
+            "Sponsorship Officer": "Julia Sheats",
+            "Documentation Officer": "Christian M. Schrader",
+            "Engagement Officer": "Kirsten Bowers",
+            "Public Relations Officer": "Abby Hyde", 
+        }
+    }
+    return render(request, "hprc/project.html", context)
+
 def sirius(request):
     context = {
         'nbar': "projects",
@@ -38,7 +107,7 @@ def sirius(request):
             "CDR Presentation": "hprc/sirius/WPI HPRC CDR Presentation 2021.pdf",
             # "Flight Readiness Review": "hprc/goddard/Worcester Polytechnic Institute - 2020 - FRR Report.pdf",
         },
-        "photos": "https://photos.app.goo.gl/w3eEeHMk1ChAUU8x5",
+        # "photos": "https://photos.app.goo.gl/w3eEeHMk1ChAUU8x5",
         "sponsors": {
             "Gold": [
                 "WPI Tinkerbox",
@@ -102,7 +171,7 @@ def goddard(request):
             "Critical Design Review": "hprc/goddard/Worcester Polytechnic Institute - 2020 - CDR Report.pdf",
             "Flight Readiness Review": "hprc/goddard/Worcester Polytechnic Institute - 2020 - FRR Report.pdf",
         },
-        "photos": "https://photos.app.goo.gl/nweEEhFTJYfKczVr8",
+        # "photos": "https://photos.app.goo.gl/nweEEhFTJYfKczVr8",
         "sponsors": {
             "Platinum": [
                 "Jones Machine Company"
@@ -133,7 +202,7 @@ def goddard(request):
                 "assembled in minutes.  These and many other changes put the team's new knowledge to good use."
             ),
             (
-                "The goal of the payload, named Icarus was to mechanically retain and deploy an Unmanned Aerial Vehicle "
+                "The goal of the payload, named Icarus, was to mechanically retain and deploy an Unmanned Aerial Vehicle "
                 "(UAV) to collect a sample from a designated area. In order to perform this function, we "
                 "designed a lead screw driven retention system which oriented and lifted the UAV out of the rocket body "
                 "and an unfolding drone capable of collecting a 15ml soil sample.  Compared with last year's design, Icarus "
@@ -176,7 +245,7 @@ def goats(request):
             "Flight Readiness Review": "hprc/goats/Worcester Polytechnic Institute - 2019 - FRR Report.pdf",
             "Post-Launch Assessment Review": "hprc/goats/Worcester Polytechnic Institute - 2019 - PLAR Report.pdf",
         },
-        "photos": "https://photos.app.goo.gl/kshVddRy9KsDYAGA6",
+        # "photos": "https://photos.app.goo.gl/kshVddRy9KsDYAGA6",
         "sponsors": {
             "Silver": [
                 "Hydrocutter Inc.",

@@ -37,6 +37,7 @@
                         Projects
                     </a>
                     <div class="dropdown-menu" aria-labelledby="projectsLabel">
+                        <a class="dropdown-item" href="{% url 'hprc:aquila' %}">2022, Aquila</a>
                         <a class="dropdown-item" href="{% url 'hprc:sirius' %}">2021, Sirius and Polaris</a>
                         <a class="dropdown-item" href="{% url 'hprc:goddard' %}">2020, Project Goddard</a>
                         <a class="dropdown-item" href="{% url 'hprc:goats' %}">2019, G.O.A.T.S</a>
@@ -45,6 +46,7 @@
                 <a class="nav-link {% if nbar == 'sponsors' %}active{% endif %}"
                     href="{% url 'hprc:sponsors' %}">Sponsors</a>
                 <a class="nav-link {% if nbar == 'team' %}active{% endif %}" href="{% url 'hprc:team' %}">Team</a>
+                <!-- <a class="nav-link {% if nbar == 'media' %}active{% endif %}" href="{% url 'hprc:media' %}">Media</a> -->
                 <a class="nav-link {% if nbar == 'contact' %}active{% endif %}" href="{% url 'hprc:contact' %}">Contact</a>
             </ul>
             <ul class="navbar-nav ml-auto">

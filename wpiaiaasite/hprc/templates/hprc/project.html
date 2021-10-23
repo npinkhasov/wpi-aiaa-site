@@ -16,6 +16,7 @@
                 {% endfor %}
             </div>
             {% endfor %}
+            {% if docs %}
             <h3 class="pt-3 text-center">
                 Documents
             </h3>
@@ -26,12 +27,13 @@
                     style="width: 80%;">{{name}}</a>
             </div>
             {% endfor %}
-            {% if photos %}
+            {% endif %}
+            <!-- {% if photos %}
             <div>
                 <a target="_blank" href="{{photos}}" class="m-1 btn btn-outline-light btn-lg"
                     style="width: 80%;">Photos</a>
             </div>
-            {% endif %}
+            {% endif %} -->
         </div>
         <div class="col-md-9 bg-light p-0 shadow-lg">
             <div class="pl-5 ">
