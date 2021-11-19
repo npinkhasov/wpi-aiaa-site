@@ -1,0 +1,24 @@
+{% extends "hprc/base.html" %} {% load static %} {% block content %}
+
+<div class="container shadow">
+    <h1 class="display-3 mt-4">Donate to HPRC</h1>
+    <hr/>
+    <div class="row">
+        <div class="column pl-3 text-center">
+                <img class="img-fluid rounded m-3" style="width: 60%;" src="{% static 'hprc/img/donate-site.png' %}" 
+                    alt="Screenshot of the WPI donation site" />
+        </div>
+
+        <div class="column pl-3">
+            <p>1. Click <a href="https://impactapi.causeview.com/Thunder/actionpage/c005859a-ffad-4b9d-8d0c-f414096506cd" target="_blank">
+                here</a> to donate to WPI HPRC!</p>
+            <p>2. Under the “Designation” dropdown menu, select “Other”</p>
+            <p>3. In the “Other Designation” field, paste in the following: “WPI AIAA (281-AG) for WPI HPRC”</p>
+        </div>
+        
+        <br>
+
+    </div>
+</div>
+
+{% endblock content %}

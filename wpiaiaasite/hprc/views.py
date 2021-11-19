@@ -10,8 +10,11 @@ def sponsors(request):
     return render(request, "hprc/sponsors.html", context)
 
 def sponsorpackage(request):
-    context = {'nbar': 'sponsors'}
-    return render(request, "hprc/sponsorpackage.html", context)
+    context = {'nbar': 'sponsors',
+                'docName': 'Sponsorship Package',
+                'document': 'hprc/pdfs/sponsorship_package.pdf',
+                'docUrl': 'hprc:sponsorpackage'}
+    return render(request, "hprc/pdfviewer.html", context)
 
 def construction(request):
     context = {'nbar': 'dog'}
@@ -20,6 +23,10 @@ def construction(request):
 def contact(request):
     context = {'nbar': 'contact'}
     return render(request, "hprc/contact.html", context)
+
+def donate(request):
+    context = {'nbar': 'donate'}
+    return render(request, "hprc/donate.html", context)
     
 def team(request):
     context = {'nbar': 'team'}
@@ -28,6 +35,34 @@ def team(request):
 def media(request):
     context = {'nbar': 'media'}
     return render(request, "hprc/media.html", context)
+
+def oct21(request):
+    context = {'nbar': 'sponsors',
+                'docName': 'October 2021 Newsletter',
+                'document': 'hprc/pdfs/oct21.pdf',
+                'docUrl': 'hprc:oct21'}
+    return render(request, "hprc/pdfviewer.html", context)
+
+def sept21(request):
+    context = {'nbar': 'sponsors',
+                'docName': 'September 2021 Newsletter',
+                'document': 'hprc/pdfs/sept21.pdf',
+                'docUrl': 'hprc:sept21'}
+    return render(request, "hprc/pdfviewer.html", context)
+
+def april21(request):
+    context = {'nbar': 'sponsors',
+                'docName': 'April 2021 Newsletter',
+                'document': 'hprc/pdfs/april21.pdf',
+                'docUrl': 'hprc:april21'}
+    return render(request, "hprc/pdfviewer.html", context)
+
+def may21(request):
+    context = {'nbar': 'sponsors',
+                'docName': 'May 2021 Newsletter',
+                'document': 'hprc/pdfs/may21.pdf',
+                'docUrl': 'hprc:may21'}
+    return render(request, "hprc/pdfviewer.html", context)
     
 def aquila(request):
     context = {
@@ -65,7 +100,7 @@ def aquila(request):
                 "The rocket, Altair, will measure 125 inches long with a diameter of 6 inches and feature "
                 "redesigned couplers and airbrakes. The new couplers hold together parts of the airframe that "
                 "do not separate in flight by using a screw-together technique meant to provide proper stiffness "
-                "and support. The predicted apogee of the rocket is 10,437 ft using the airbrake system."
+                "and support. The predicted apogee of the rocket is 10,000 ft using the airbrake system."
             ),
             (
                 "The payload, Tarazed, features an aerial vehicle that is released from the rocket during flight. "
@@ -107,7 +142,6 @@ def sirius(request):
             "CDR Presentation": "hprc/sirius/WPI HPRC CDR Presentation 2021.pdf",
             # "Flight Readiness Review": "hprc/goddard/Worcester Polytechnic Institute - 2020 - FRR Report.pdf",
         },
-        # "photos": "https://photos.app.goo.gl/w3eEeHMk1ChAUU8x5",
         "sponsors": {
             "Gold": [
                 "WPI Tinkerbox",
@@ -171,7 +205,6 @@ def goddard(request):
             "Critical Design Review": "hprc/goddard/Worcester Polytechnic Institute - 2020 - CDR Report.pdf",
             "Flight Readiness Review": "hprc/goddard/Worcester Polytechnic Institute - 2020 - FRR Report.pdf",
         },
-        # "photos": "https://photos.app.goo.gl/nweEEhFTJYfKczVr8",
         "sponsors": {
             "Platinum": [
                 "Jones Machine Company"
@@ -245,7 +278,6 @@ def goats(request):
             "Flight Readiness Review": "hprc/goats/Worcester Polytechnic Institute - 2019 - FRR Report.pdf",
             "Post-Launch Assessment Review": "hprc/goats/Worcester Polytechnic Institute - 2019 - PLAR Report.pdf",
         },
-        # "photos": "https://photos.app.goo.gl/kshVddRy9KsDYAGA6",
         "sponsors": {
             "Silver": [
                 "Hydrocutter Inc.",

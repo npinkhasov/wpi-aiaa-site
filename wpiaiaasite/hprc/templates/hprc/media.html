@@ -3,62 +3,46 @@
 <div class="container shadow">
     <h1 class="display-3 mt-4">Team Media</h1>
     <hr />
+    <p>Visit our <a href="https://www.youtube.com/channel/UCBQQnkCEcQVjmMxXQIKhfKQ">YouTube channel</a> for launch videos, member workshops, and more. 
+        For media inquiries, contact Abby Hyde (Public Relations Officer) at <a href="mailto:aghyde@wpi.edu">aghyde@wpi.edu</a>.</p>
     
-    <!-- <p class="lead">Some kind of text description here or something??</p> -->
-    
+    <div class="container">
+        <h1>Past Newsletters</h1>
+        <hr>
+        <div class="text-left">
+            <a class="btn btn-primary text-center"
+                href="{% url 'hprc:oct21' %}"
+                role="button">Oct 2021</a>
+            <a class="btn btn-primary text-center"
+                href="{% url 'hprc:sept21' %}"
+                role="button">Sept 2021</a>
+            <a class="btn btn-primary text-center"
+                href="{% url 'hprc:may21' %}"
+                role="button">May 2021</a>
+            <a class="btn btn-primary text-center"
+                href="{% url 'hprc:april21' %}"
+                role="button">April 2021</a>
+            
+        </div>
+    </div>
+
     <br class="mt-2" />
     <div class="container">
-        <h1>2021-2022</h1>
+        <h1>Photo Albums</h1>
         <hr>
-
-
-        <br class="mt-5" >
-        <h1>2020-2021</h1>
-        <hr>
-        
-
-        <br class="mt-5">
-        <h1>2019-2020</h1>
-        <hr>
-        <br class="mt-5">
-
-        <h1>2018-2019</h1>
-        <hr>
-        <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselIndicators" data-slide-to="3"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="{% static 'hprc/img/media/usli1920_1.jpg' %}" class="d-block w-100 front-carousel-image"
-                        alt="Battle of the Rockets" />
-                </div>
-                <div class="carousel-item">
-                    <img src="{% static 'hprc/img/media/usli1920_2.jpg' %}" class="d-block w-100 front-carousel-image"
-                        alt="Social Event" />
-                </div>
-                <div class="carousel-item">
-                    <img src="{% static 'hprc/img/media/usli1920_3.jpg' %}" class="d-block w-100 front-carousel-image"
-                        alt="HPRC" />
-                </div>
-                <div class="carousel-item">
-                    <img src="{% static 'hprc/img/media/usli1920_4.jpg' %}" class="d-block w-100 front-carousel-image"
-                        alt="UAV Club" />
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+        <div><a class="btn btn-primary text-center"
+            href="https://photos.app.goo.gl/pJg9oeSU6WWET1Qs7" target="_blank"
+            role="button">2021-2022</a>
+        <a class="btn btn-primary text-center"
+            href="https://photos.app.goo.gl/w3eEeHMk1ChAUU8x5" target="_blank"
+            role="button">2020-2021</a>
+        <a class="btn btn-primary text-center"
+            href="https://photos.app.goo.gl/nweEEhFTJYfKczVr8" target="_blank"
+            role="button">2019-2020</a>
+        <a class="btn btn-primary text-center"
+            href="https://photos.app.goo.gl/kshVddRy9KsDYAGA6" target="_blank"
+            role="button">2018-2019</a>
         </div>
-
         <br class="mt-5">
         
         <br>
