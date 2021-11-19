@@ -9,13 +9,6 @@ def sponsors(request):
     context = {'nbar': 'sponsors'}
     return render(request, "hprc/sponsors.html", context)
 
-def sponsorpackage(request):
-    context = {'nbar': 'sponsors',
-                'docName': 'Sponsorship Package',
-                'document': 'hprc/pdfs/sponsorship_package.pdf',
-                'docUrl': 'hprc:sponsorpackage'}
-    return render(request, "hprc/pdfviewer.html", context)
-
 def construction(request):
     context = {'nbar': 'dog'}
     return render(request, "hprc/construction.html", context)
@@ -36,31 +29,38 @@ def media(request):
     context = {'nbar': 'media'}
     return render(request, "hprc/media.html", context)
 
-def oct21(request):
+def sponsorpackage(request):
     context = {'nbar': 'sponsors',
+                'docName': 'Sponsorship Package',
+                'document': 'hprc/pdfs/sponsorship_package.pdf',
+                'docUrl': 'hprc:sponsorpackage'}
+    return render(request, "hprc/pdfviewer.html", context)
+
+def oct21(request):
+    context = {'nbar': 'media',
                 'docName': 'October 2021 Newsletter',
-                'document': 'hprc/pdfs/oct21.pdf',
+                'document': 'hprc/pdfs/Oct21.pdf',
                 'docUrl': 'hprc:oct21'}
     return render(request, "hprc/pdfviewer.html", context)
 
 def sept21(request):
-    context = {'nbar': 'sponsors',
+    context = {'nbar': 'media',
                 'docName': 'September 2021 Newsletter',
-                'document': 'hprc/pdfs/sept21.pdf',
+                'document': 'hprc/pdfs/Sept21.pdf',
                 'docUrl': 'hprc:sept21'}
     return render(request, "hprc/pdfviewer.html", context)
 
 def april21(request):
-    context = {'nbar': 'sponsors',
+    context = {'nbar': 'media',
                 'docName': 'April 2021 Newsletter',
-                'document': 'hprc/pdfs/april21.pdf',
+                'document': 'hprc/pdfs/April21.pdf',
                 'docUrl': 'hprc:april21'}
     return render(request, "hprc/pdfviewer.html", context)
 
 def may21(request):
-    context = {'nbar': 'sponsors',
+    context = {'nbar': 'media',
                 'docName': 'May 2021 Newsletter',
-                'document': 'hprc/pdfs/may21.pdf',
+                'document': 'hprc/pdfs/May21.pdf',
                 'docUrl': 'hprc:may21'}
     return render(request, "hprc/pdfviewer.html", context)
     
