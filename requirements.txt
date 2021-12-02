@@ -15,4 +15,4 @@ six==1.15.0
 sorl-thumbnail==12.7.0
 sqlparse==0.4.1
 webencodings==0.5.1
-wiki==0.7.3
+wiki==0.7.9
