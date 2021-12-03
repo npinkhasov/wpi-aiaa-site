@@ -36,6 +36,13 @@ def sponsorpackage(request):
                 'docUrl': 'hprc:sponsorpackage'}
     return render(request, "hprc/pdfviewer.html", context)
 
+def nov21(request):
+    context = {'nbar': 'media',
+                'docName': 'November 2021 Newsletter',
+                'document': 'hprc/pdfs/Nov21.pdf',
+                'docUrl': 'hprc:nov21'}
+    return render(request, "hprc/pdfviewer.html", context)
+
 def oct21(request):
     context = {'nbar': 'media',
                 'docName': 'October 2021 Newsletter',

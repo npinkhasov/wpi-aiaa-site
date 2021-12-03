@@ -8,6 +8,7 @@ urlpatterns = [
     path("", views.index, name="index"),
     path("sponsors/", views.sponsors, name="sponsors"),
     path("sponsors/package", views.sponsorpackage, name="sponsorpackage"),
+    path("media/nov21", views.nov21, name="nov21"),
     path("media/oct21", views.oct21, name="oct21"),
     path("media/sept21", views.sept21, name="sept21"),
     path("media/april21", views.april21, name="april21"),
