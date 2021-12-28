@@ -92,14 +92,14 @@ def aquila(request):
                 "Turner Construction"
             ]
         },
-        "image": 'hprc/aquila/interest_meeting.jpg',
-        "caption": "New members are introduced to the team mission during an interest meeting.",
+        "image": 'hprc/aquila/design-review-dec21.jpg',
+        "caption": "Members of the airbrakes subteam present their design during the internal design review.",
         "text": [
             (
                 "Now in the team’s fourth year, WPI HPRC looks to reach new heights, literally and figuratively. "
-                "The team has applied to compete in the Intercollegiate Rocketry Engineering Competition (IREC) in "
-                "the 10,000 ft category, having launched rockets to 5,000 feet in previous years. Through increased "
-                "promotion in the WPI community, HPRC has gained more than 100 new members and is well-prepared to "
+                "The team has been accepted to compete in the Intercollegiate Rocketry Engineering Competition (IREC) in "
+                "the 10,000 ft COTS category, having launched rockets to 5,000 feet in previous years. Through increased "
+                "promotion in the WPI community, HPRC has grown to about 110 members and is well-prepared to "
                 "take on the challenge of creating a more powerful rocket. This year’s project is named Aquila, "
                 "after a constellation that contains the stars Altair and Tarazed and means eagle in Latin. "
             ),
@@ -110,10 +110,12 @@ def aquila(request):
                 "and support. The predicted apogee of the rocket is 10,000 ft using the airbrake system."
             ),
             (
-                "The payload, Tarazed, features an aerial vehicle that is released from the rocket during flight. "
-                "Its mission is to locate the rocket after the rocket lands using multiple search methods and "
-                "relay its position back to the ground crew. Currently, the payload is in the prototyping stage "
-                "as the team considers different designs such as a quadcopter and fixed-wing aircraft. "
+                "The payload, Tarazed, features a quadcopter designed to locate the rocket after the rocket lands by "
+                "triangulating a signal broadcast by the rocket. It will verify the correct location using GPS data and subsequently "
+                "relay its position back to the ground crew. The payload mechanical subteam is drawing upon knowledge and experience gained "
+                "in 2019 when the team built a quadcopter for the USLI Payload Challenge. The software for "
+                "this year's payload is more complex as the waypoints, or target locations for the quadcopter to fly to, must be "
+                "updated during flight. "
             ),
             (
                 "The avionics board features a stacked, modular design for efficient development and easy "
