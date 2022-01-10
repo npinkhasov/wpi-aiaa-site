@@ -83,7 +83,8 @@ def aquila(request):
             ],
             "Gold": [
                 "WPI Tinkerbox",
-                "Ensign-Bickford Aerospace & Defense"
+                "Ensign-Bickford Aerospace & Defense",
+                "enDAQ"
             ],
             "Bronze": [
                 "Astralintu",
