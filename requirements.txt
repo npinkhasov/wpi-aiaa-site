@@ -8,7 +8,7 @@ django-nyt==1.1.6
 django-sekizai==2.0.0
 Markdown==3.2.2
 packaging==20.8
-Pillow==8.1.1
+Pillow==9.0.1
 pyparsing==2.4.7
 pytz==2020.5
 six==1.15.0
