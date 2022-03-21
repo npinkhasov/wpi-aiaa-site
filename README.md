@@ -47,7 +47,7 @@ To deploy to aiaa.wpi.edu, you must first be on a computer on WPI's network.  Yo
 **Before deploying, ensure that ```DEBUG``` is set to ```False```!**
 
 ```
-ssh administrator@aiaa.wpi.edu
+ssh aiaasite@aiaa.wpi.edu
 ```
 When prompted, enter the admin password.
 
