@@ -1,0 +1,32 @@
+{% extends "hprc/base.html" %} {% load static %} {% block content %}
+
+<div class="container shadow">
+    <h1 class="display-3 mt-4">Project Presentation Night</h1>
+    <hr/>
+    <p>HPRC is excited to present Aquila, our 2022 rocket and payload system, and express our gratitude to our sponsors, mentors, and supporters.
+    HPRC Project Presentation Night will be held on March 30th, 2021 from 6-8pm at WPI in the CC Odeum. 
+    Subteam posters featured in the subteam showcase can be found at the link below.</p>
+
+    <h3>Itinerary</h3>
+    <ul>
+        <li>5:45pm EST - Doors Open</li>
+        <li>6:00pm EST - Introduction</li>
+        <li>6:15pm EST - Formal Presentation (Rocket)</li>
+        <li>6:45pm EST - Intermission</li>
+        <li>6:50pm EST - Formal Presentation (Payload)</li>
+        <li>7:20pm EST - Subteam Showcase & Q&A</li>
+        <li>8:00pm EST - Adjournment</li>
+    </ul>
+
+    <div class="container">
+        <div class="text-left">
+            <a class="btn btn-primary text-center"
+                href="{% url 'hprc:presentposters' %}"
+                role="button">Presentation Posters</a>
+        </div>
+    </div>
+
+    <br>
+</div>
+
+{% endblock content %}

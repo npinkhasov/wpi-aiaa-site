@@ -29,11 +29,22 @@ def media(request):
     context = {'nbar': 'media'}
     return render(request, "hprc/media.html", context)
 
+def present(request):
+    context = {'nbar': 'present'}
+    return render(request, "hprc/present.html", context)
+
 def sponsorpackage(request):
     context = {'nbar': 'sponsors',
                 'docName': 'Sponsorship Package',
                 'document': 'hprc/pdfs/sponsorship_package.pdf',
                 'docUrl': 'hprc:sponsorpackage'}
+    return render(request, "hprc/pdfviewer.html", context)
+
+def presentposters(request):
+    context = {'nbar': 'present',
+                'docName': 'Presentation Night Posters',
+                'document': 'hprc/pdfs/presentation_posters.pdf',
+                'docUrl': 'hprc:presentposters'}
     return render(request, "hprc/pdfviewer.html", context)
 
 def feb22(request):
