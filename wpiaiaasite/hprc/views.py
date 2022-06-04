@@ -102,6 +102,7 @@ def aquila(request):
         "project_title": "Aquila",
         "year": "2021-2022",
         # "docs": {},
+        "photos": "https://photos.app.goo.gl/pJg9oeSU6WWET1Qs7",
         "sponsors": {
             "Platinum": [
                 "Altium Designer"
@@ -123,7 +124,7 @@ def aquila(request):
         "text": [
             (
                 "Now in the team’s fourth year, WPI HPRC looks to reach new heights, literally and figuratively. "
-                "The team has been accepted to compete in the Intercollegiate Rocketry Engineering Competition (IREC) in "
+                "The team is competing in the Intercollegiate Rocketry Engineering Competition (IREC) in "
                 "the 10,000 ft COTS category, having launched rockets to 5,000 feet in previous years. Through increased "
                 "promotion in the WPI community, HPRC has grown to about 110 members and is well-prepared to "
                 "take on the challenge of creating a more powerful rocket. This year’s project is named Aquila, "
@@ -131,7 +132,7 @@ def aquila(request):
             ),
             (
                 "The rocket, Altair, will measure 125 inches long with a diameter of 6 inches and feature "
-                "redesigned couplers and airbrakes. The new couplers hold together parts of the airframe that "
+                "redesigned couplings and airbrakes. The new couplings hold together parts of the airframe that "
                 "do not separate in flight by using a screw-together technique meant to provide proper stiffness "
                 "and support. The predicted apogee of the rocket is 10,000 ft using the airbrake system."
             ),
@@ -139,9 +140,7 @@ def aquila(request):
                 "The payload, Tarazed, features a quadcopter designed to locate the rocket after the rocket lands by "
                 "triangulating a signal broadcast by the rocket. It will verify the correct location using GPS data and subsequently "
                 "relay its position back to the ground crew. The payload mechanical subteam is drawing upon knowledge and experience gained "
-                "in 2019 when the team built a quadcopter for the USLI Payload Challenge. The software for "
-                "this year's payload is more complex as the waypoints, or target locations for the quadcopter to fly to, must be "
-                "updated during flight. "
+                "in 2019 when the team built a quadcopter for the USLI Payload Challenge. "
             ),
             (
                 "The avionics board features a stacked, modular design for efficient development and easy "
@@ -177,6 +176,7 @@ def sirius(request):
             "CDR Presentation": "hprc/sirius/WPI HPRC CDR Presentation 2021.pdf",
             # "Flight Readiness Review": "hprc/goddard/Worcester Polytechnic Institute - 2020 - FRR Report.pdf",
         },
+        "photos": "https://photos.app.goo.gl/w3eEeHMk1ChAUU8x5",
         "sponsors": {
             "Gold": [
                 "WPI Tinkerbox",
@@ -193,15 +193,16 @@ def sirius(request):
         "text": [
             (
                 "Entering their third year, WPI USLI made the decision to rebrand to the High Power Rocketry Club (HPRC).  "
-                "This year was uniquely challenging as the COVID-19 pandemic prevented the majority in person meetings.  "
-                "While the team initially continued to compete in NASA Student Launch, the competition was dropped in December "
+                "This year was uniquely challenging as the COVID-19 pandemic prevented the majority of in-person meetings.  "
+                "While the team initially continued to compete in NASA Student Launch, the team dropped out of the competition in December "
                 "as there was no way for the team to fulfill launch requirements while staying in compliance with WPI's and the CDC's "
-                "COVID safety guidelines.  Despite this, the team continued designing and building our rocket and payload.  There is "
-                "still a lot to learn by flying the mission, even if it is not at the competition."
+                "COVID safety guidelines.  Despite this, the team continued designing and building our rocket and payload through "
+                "the end of the year. The team was finally able to launch the 2021 rocket at St. Albans in April 2022 to test several systems "
+                "for the 2022 project, Aquila. "
             ),
             (
-                "The team's rocket, Sirius, continues to build upon the experience gained in the past two competition years. "
-                "It contains many new systems such as forward mounted motor retention, an airbrake system, and a custom "
+                "The team's rocket, Sirius, continued to build upon the experience gained in the past two competition years. "
+                "It contained many new systems such as forward mounted motor retention, an airbrake system, and a custom "
                 "avionics board.  The vehicle has a predicted apogee of 4934 ft but has a target apogee of 4550 ft.  "
                 "To ensure there is no overshoot, the airbrake system is actively controlled by the avionics to produce "
                 "just enough drag to reduce the vehicle's apogee to the target."
@@ -211,7 +212,7 @@ def sirius(request):
                 "lands under its own parachute before engaging its self-righting system which rights the payload from any "
                 "orientation using a set of outward folding petals.  This is more finely adjusted by the stabilization system "
                 "which uses a set of legs that deploy to level the payload within 5 degrees on uneven terrain.  Finally, "
-                "it takes a panoramic photo using its top mounted camera before transmitting the photo back to a ground station."
+                "it takes a panoramic photo using a top mounted camera before transmitting the photo back to the ground station."
             )
         ],
         "officers": {
@@ -240,6 +241,7 @@ def goddard(request):
             "Critical Design Review": "hprc/goddard/Worcester Polytechnic Institute - 2020 - CDR Report.pdf",
             "Flight Readiness Review": "hprc/goddard/Worcester Polytechnic Institute - 2020 - FRR Report.pdf",
         },
+        "photos": "https://photos.app.goo.gl/nweEEhFTJYfKczVr8",
         "sponsors": {
             "Platinum": [
                 "Jones Machine Company"
@@ -313,6 +315,7 @@ def goats(request):
             "Flight Readiness Review": "hprc/goats/Worcester Polytechnic Institute - 2019 - FRR Report.pdf",
             "Post-Launch Assessment Review": "hprc/goats/Worcester Polytechnic Institute - 2019 - PLAR Report.pdf",
         },
+        "photos": "https://photos.app.goo.gl/kshVddRy9KsDYAGA6",
         "sponsors": {
             "Silver": [
                 "Hydrocutter Inc.",
@@ -325,8 +328,8 @@ def goats(request):
                 "While WPI had competed in rocketry competitions previously, namely Battle of the Rockets, "
                 "HPRC as we know it today was first founded in 2018 as WPI University Student Launch Initiative (USLI). "
                 "After pitching the project to the AIAA "
-                "Officer Board, the team received its initial funding.  The project name, G.O.A.T.S was selected for WPI's "
-                "mascot, Gompei the goat, in addition to the fact that we just like acronyms.  Having just started out, the members "
+                "Officer Board, the team received its initial funding.  The project name, G.O.A.T.S was selected in honor of WPI's "
+                "mascot, Gompei the Goat.  Having just started out, the members "
                 "of the team lacked experience.  The officers were mostly sophomores leading a large "
                 "group of mostly freshmen.  Despite this, the team spent the year learning and overcoming "
                 "challenges at every step.  They submitted their first design reviews, solved unexpected "
@@ -336,23 +339,23 @@ def goats(request):
             (
                 "While not every rookie team makes it to launch week, WPI got there, beating many tough challenges "
                 "along the way.  Ultimately, when the team's rocket took flight at the competition launch in Huntsville, "
-                "it was destroyed at around 800ft due to a defect in the motor the team purchased.  While it may have "
+                "it was destroyed at around 800 ft due to a defect in the motor the team purchased.  While it may have "
                 "been disappointing, the team still returned home excited.  The members learned a lot from meeting with "
                 "other teams and NASA engineers and were already brainstorming new ideas for next year before launch week "
                 "was over.  The first year was not perfect, but it cemented the team as WPI's premier rocketry team."
             ),
             (
-                "Our first launch vehicle named, Batman, was designed to reach an apogee of approximately " 
-                "4094 ft on the motor picked for launch. The launch vehicle split into four independent sections "
-                "over the course of its decent. Upon full separation, the sections were defined as the upper airframe, the lower "
-                "airframe, the payload retention system, which are all tethered together, and the nose cone, which descended seperately. "
-                "Housed within the upper airframe was the payload retention system made of airframe tubing "
-                "dedicated to housing the selected payload for the duration of its flight. The vehicle had three "
+                "Our first launch vehicle, named Batman, was designed to reach an apogee of approximately " 
+                "4094 ft and split into four independent sections "
+                "over the course of its descent. The four sections of the rocket were the upper airframe, the lower "
+                "airframe, the payload retention system, and the nose cone, which descended separately from the other three sections. "
+                "The upper airframe housed the payload retention system for the duration of its flight and released it "
+                "during descent so the payload mission could be performed. The vehicle had three "
                 "parachutes, a nose cone parachute, drogue parachute and main parachute. The launch vehicle’s "
                 "flight data was recorded using a Raven 3 Altimeter that was housed in the electronics bay."
             ),
             (
-                "Our selected design for our payload, named Robin, was a quadrotor UAV housed within a cylindrical "
+                "Our payload, named Robin, was a quadrotor UAV housed within a cylindrical "
                 "retention system composed of Blue Tube 2.0. The tube held the UAV as well as a 3D printed base to hold "
                 "the UAV in place and was to be ejected from the rocket during descent. When activated, the system "
                 "was designed to unfold, opening its four arms to right itself in the process to deploy the UAV. "

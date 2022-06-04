@@ -28,10 +28,12 @@
             </div>
             {% endfor %}
             {% endif %}
+            {% if photos %}
             <div>
-                <a target="_blank" href="{% url 'hprc:media' %}" class="m-1 btn btn-outline-light btn-lg"
+                <a target="_blank" href="{{photos}}" class="m-1 btn btn-outline-light btn-lg"
                     style="width: 80%;">Photos</a>
             </div>
+            {% endif %}
         </div>
         <div class="col-md-9 bg-light p-0 shadow-lg">
             <div class="pl-5 ">
