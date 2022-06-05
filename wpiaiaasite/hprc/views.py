@@ -47,6 +47,20 @@ def presentposters(request):
                 'docUrl': 'hprc:presentposters'}
     return render(request, "hprc/pdfviewer.html", context)
 
+def apr22(request):
+    context = {'nbar': 'media',
+                'docName': 'April 2022 Newsletter',
+                'document': 'hprc/pdfs/Apr22.pdf',
+                'docUrl': 'hprc:apr22'}
+    return render(request, "hprc/pdfviewer.html", context)
+
+def mar22(request):
+    context = {'nbar': 'media',
+                'docName': 'March 2022 Newsletter',
+                'document': 'hprc/pdfs/Mar22.pdf',
+                'docUrl': 'hprc:mar22'}
+    return render(request, "hprc/pdfviewer.html", context)
+
 def feb22(request):
     context = {'nbar': 'media',
                 'docName': 'February 2022 Newsletter',
