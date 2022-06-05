@@ -41,7 +41,7 @@ def sponsorpackage(request):
     return render(request, "hprc/pdfviewer.html", context)
 
 def presentposters(request):
-    context = {'nbar': 'present',
+    context = {'nbar': 'media',
                 'docName': 'Presentation Night Posters',
                 'document': 'hprc/pdfs/presentation_posters.pdf',
                 'docUrl': 'hprc:presentposters'}
@@ -115,7 +115,9 @@ def aquila(request):
         'nbar': "projects",
         "project_title": "Aquila",
         "year": "2021-2022",
-        # "docs": {},
+        "docs": {
+            "Subteam Overviews": "hprc/pdfs/presentation_posters.pdf",
+        },
         "photos": "https://photos.app.goo.gl/pJg9oeSU6WWET1Qs7",
         "sponsors": {
             "Platinum": [
