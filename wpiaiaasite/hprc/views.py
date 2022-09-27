@@ -116,7 +116,9 @@ def aquila(request):
         "project_title": "Aquila",
         "year": "2021-2022",
         "docs": {
-            "Subteam Overviews": "hprc/pdfs/presentation_posters.pdf",
+            "Technical Report": "hprc/aquila/81_technical_report.pdf",
+            "Podium Presentation": "hprc/aquila/81_podium_presentation.pdf",
+            "Failure Report": "hprc/aquila/81_failure_investigation_report.pdf",
         },
         "photos": "https://photos.app.goo.gl/pJg9oeSU6WWET1Qs7",
         "sponsors": {
