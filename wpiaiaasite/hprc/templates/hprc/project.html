@@ -16,11 +16,13 @@
                 {% endfor %}
             </div>
             {% endfor %}
-            {% if docs %}
+            {% if docs or photos %}
             <h3 class="pt-3 text-center">
-                Documents
+                Media
             </h3>
             <hr color="white">
+            {% endif %}
+            {% if docs %}
             {% for name, link in docs.items %}
             <div>
                 <a href="{% static link %}" target="_blank" class="m-1 btn btn-outline-light btn-lg"
