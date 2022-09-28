@@ -56,6 +56,31 @@ Next, enter the website directory.
 cd wpi-aiaa-site
 ```
 
+### Setting up SSH
+If you haven't deployed before you will need to setup a SSH key on your GitHub account and in the project to access the repo from the server. Generate your key with your GitHub email.
+```
+$ ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
+You will be prompted to enter a location to save the key ```Enter file in which to save the key (/home/aiaasite/.ssh/id_ed25519):```. Enter your name as the file name.
+```
+/home/aiaasite/.ssh/yourname
+```
+
+You may use a passphrase if you wish, just be sure to keep track of it. To add the key to your account copy the contents of yourname.pub to [https://github.com/settings/keys](https://github.com/settings/keys).
+```
+cat ~/.ssh/yourname.pub
+```
+
+To add the SSH key to the agent, activate the agent.
+```
+eval "$(ssh-agent -s)"
+```
+Then add your key into the agent.
+```
+ssh-add ~/.ssh/yourname
+```
+### Pulling changes and updating the server
 From here, pull all of your changes from Github.
 ```
 git pull
@@ -68,7 +93,7 @@ git reset --hard origin/master
 
 Next collect all static files that have been changed.  To do this, you must activate the virtual environment.
 ```
-source env/bin/activate
+source AIAAvenv/bin/activate
 cd wpiaiaasite
 python manage.py collectstatic
 ```
