@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DEBUG = False
 
 # If running on the real server, prevents debug mode.
-if not DEBUG or os.path.realpath(__file__) == "/home/administrator/wpiaiaasite/wpiaiaasite/settings.py":
+if not DEBUG or os.path.realpath(__file__) == "/home/aiaasite/wpi-aiaa-site/wpiaiaasite/wpiaiaasite/settings.py":
     DEBUG = False
     with open("/etc/config.json") as config_file:
         config = json.load(config_file)
@@ -39,7 +39,7 @@ else:
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config["SECRET_KEY"]
 
-ALLOWED_HOSTS = ["aiaa.wpi.edu", "wpihprc.com", "127.0.0.1"]
+ALLOWED_HOSTS = ["www.aiaa.wpi.edu", "aiaa.wpi.edu", "wpihprc.com", "127.0.0.1"]
 
 
 # Application definition
