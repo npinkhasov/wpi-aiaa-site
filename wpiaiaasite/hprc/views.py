@@ -141,29 +141,29 @@ def aquila(request):
         "caption": "Members of the airbrakes subteam present their design during the internal design review.",
         "text": [
             (
-                "Now in the team’s fourth year, WPI HPRC looks to reach new heights, literally and figuratively. "
-                "The team is competing in the Intercollegiate Rocketry Engineering Competition (IREC) in "
-                "the 10,000 ft COTS category, having launched rockets to 5,000 feet in previous years. Through increased "
-                "promotion in the WPI community, HPRC has grown to about 110 members and is well-prepared to "
-                "take on the challenge of creating a more powerful rocket. This year’s project is named Aquila, "
-                "after a constellation that contains the stars Altair and Tarazed and means eagle in Latin. "
+                "Now in the team’s fourth year, WPI HPRC looked to reach new heights, literally and figuratively "
+                "by competing in the Intercollegiate Rocketry Engineering Competition (IREC) in "
+                "the 10,000 ft COTS category. The team grew to around 110 members, and was prepared to take on "
+                "the challenge of creating a more powerful rocket. The project was named Aquila, after a constellation "
+                "that contains the starts Altair and Tarazed. Altair means eagle in Latin."
             ),
             (
-                "The rocket, Altair, will measure 125 inches long with a diameter of 6 inches and feature "
+                "The rocket, Altair, measured 134 inches long with a diameter of 6 inches and featured "
                 "redesigned couplings and airbrakes. The new couplings hold together parts of the airframe that "
-                "do not separate in flight by using a screw-together technique meant to provide proper stiffness "
-                "and support. The predicted apogee of the rocket is 10,000 ft using the airbrake system."
+                "do not separate in flight by using a screw-together mechanisim meant to provide proper stiffness "
+                "and support. The airbrake system was used to target an apogee of 10,000 feet."
             ),
             (
-                "The payload, Tarazed, features a quadcopter designed to locate the rocket after the rocket lands by "
-                "triangulating a signal broadcast by the rocket. It will verify the correct location using GPS data and subsequently "
-                "relay its position back to the ground crew. The payload mechanical subteam is drawing upon knowledge and experience gained "
-                "in 2019 when the team built a quadcopter for the USLI Payload Challenge. "
+                "The payload, Tarazed, was a quadcopter designed to locate the rocket after the rocket lands by "
+                "triangulating a signal broadcast by the rocket. It was designed verify the correct location using"
+                "GPS data and subsequently relay its position back to the ground crew."
             ),
             (
-                "The avionics board features a stacked, modular design for efficient development and easy "
-                "replacement of electronic components. Additionally, the software team is developing a detailed "
-                "ground station to store and display data transmitted from the rocket and payload during the mission. "
+                "The team successfuly made it to launch week in its rookie year, a feat not accomplished by every "
+                "team. Having passed safety inspection Altair and Tarazed launched on the second day of launches, "
+                "however the vehicle broke apart at burnout due to an incorrectly programmed altimeter. Despite the "
+                "failure, the team gained significant experience from launch week, and from the failure analysis process."
+                "Within the 10k COTS category, WPI HPRC placed 3rd in technical report quality, and 11th in design quality."
             )
         ],
         "officers": {
@@ -192,7 +192,6 @@ def sirius(request):
             "PDR Presentation": "hprc/sirius/WPI HPRC PDR Presentation 2021.pdf",
             "Critical Design Review": "hprc/sirius/WPI HPRC CDR 2021.pdf",
             "CDR Presentation": "hprc/sirius/WPI HPRC CDR Presentation 2021.pdf",
-            # "Flight Readiness Review": "hprc/goddard/Worcester Polytechnic Institute - 2020 - FRR Report.pdf",
         },
         "photos": "https://photos.app.goo.gl/w3eEeHMk1ChAUU8x5",
         "sponsors": {
