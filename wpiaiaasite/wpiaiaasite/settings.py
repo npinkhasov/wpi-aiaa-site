@@ -27,8 +27,11 @@ DEBUG = False
 # If running on the real server, prevents debug mode.
 if not DEBUG or os.path.realpath(__file__) == "/home/aiaasite/wpi-aiaa-site/wpiaiaasite/wpiaiaasite/settings.py":
     DEBUG = False
-    with open("/etc/config.json") as config_file:
-        config = json.load(config_file)
+    try: 
+        with open("/etc/config.json") as config_file:
+            config = json.load(config_file)
+    except:
+        raise Exception("No configuration file found. Check that DEBUG is off if running locally.")
 else:
     config = {
         "SECRET_KEY": "dog",
