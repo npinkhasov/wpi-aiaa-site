@@ -72,7 +72,8 @@ You may use a passphrase if you wish, just be sure to keep track of it. To add t
 cat ~/.ssh/yourname.pub
 ```
 
-To add the SSH key to the agent, activate the agent.
+### Pulling changes and updating the server
+First you must set your SSH key as the active key. To add the SSH key to the agent, activate the agent.
 ```
 eval "$(ssh-agent -s)"
 ```
@@ -80,7 +81,6 @@ Then add your key into the agent.
 ```
 ssh-add ~/.ssh/yourname
 ```
-### Pulling changes and updating the server
 From here, pull all of your changes from Github.
 ```
 git pull
