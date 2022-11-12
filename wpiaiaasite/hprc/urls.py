@@ -23,6 +23,7 @@ urlpatterns = [
     path("donate", views.donate, name="donate"),
     path("team", views.team, name="team"),
     path("media", views.media, name="media"),
+    path("capricornus", views.capricornus, name="capricornus"),
     path("aquila", views.aquila, name="aquila"),
     path("sirius", views.sirius, name="sirius"),
     path("goddard", views.goddard, name="goddard"),

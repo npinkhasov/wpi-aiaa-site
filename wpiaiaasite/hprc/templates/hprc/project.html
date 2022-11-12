@@ -4,6 +4,7 @@
 <div class="container-fluid bg-primary ">
     <div class="row " style="min-height: 98vh;">
         <div class="col-md-3 mt-5 text-center text-light ">
+            {% if sponsors %}
             <h3 class="pt-3 text-center">
                 Sponsors
             </h3>
@@ -16,6 +17,7 @@
                 {% endfor %}
             </div>
             {% endfor %}
+            {% endif %}
             {% if docs or photos %}
             <h3 class="pt-3 text-center">
                 Media

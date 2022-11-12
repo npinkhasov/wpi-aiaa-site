@@ -109,6 +109,61 @@ def may21(request):
                 'document': 'hprc/pdfs/May21.pdf',
                 'docUrl': 'hprc:may21'}
     return render(request, "hprc/pdfviewer.html", context)
+
+def capricornus(request):
+    context = {
+        'nbar': "projects",
+        "project_title": "Capricornus",
+        "year": "2022-2023",
+        # "docs": {},
+        # "photos": "",
+        # "sponsors": {
+        #     "Platinum": [
+                
+        #     ],
+        #     "Gold": [
+                
+        #     ],
+        #     "Bronze": [
+                
+        #     ]
+        # },
+        "image": 'hprc/capricornus/machining-test.jpg',
+        "caption": "Members of the structures subteam practice their machining skills.",
+        "text": [
+            (
+                "In the teams 5th year WPI HPRC will again compete in the Intercollegiate Rocket "
+                "Engineering Competition (IREC) in the 10,000 ft COTS category."
+                "The project is named Capricornus, the goat constellation. "
+                "The rocket is named after the brightest star in the constellation, Deneb, and the payload is named Nashira."
+            ),
+            (
+                "The rocket, currently in development, is planned to measure 145 inches long with a diameter of 6 inches. "
+                "The vehicle feautures improvements to the recovery system, fin can, and airbrakes system. Based on our "
+                "experience from the previous year, numerous improvements are being implmeneted for our novel coupling system. "
+                "The airbrakes will again be used to target an apogee of 10,000 feet."
+            ),
+            (
+                "The payload will be a air launched quadcopter, designed to deploy while the rocket is descending, and "
+                "release a series of cubes that feature integrated weather sensors and telemetry that will transmit information "
+                "back to the ground station. The mission will be fully autonomous with monitoring via an FPV system."
+            ),
+        ],
+        "officers": {
+            "Captain": "Kevin Schultz",
+            "Rocket Lead": "Terence Tan",
+            "Payload Lead": "Jake Roller",
+            "Electronics Lead": "Michael Beskid",
+            "Safety Officer": "Haggay Vardi",
+            "Treasurer": "Aunika Yasui",
+            "Logistics Officer": "Sarah Semmy",
+            "Sponsorship Officer": "Peter Korfuzi",
+            "Documentation Officer": "Jon Whooley",
+            "Engagement Officer": "Navpreet Kaur",
+            "Public Relations Officer": "Natanel Pinkhasov", 
+        }
+    }
+    return render(request, "hprc/project.html", context)
     
 def aquila(request):
     context = {
@@ -123,7 +178,7 @@ def aquila(request):
         "photos": "https://photos.app.goo.gl/pJg9oeSU6WWET1Qs7",
         "sponsors": {
             "Platinum": [
-                "Altium Designer"
+                "Altium"
             ],
             "Gold": [
                 "WPI Tinkerbox",
@@ -142,7 +197,7 @@ def aquila(request):
         "text": [
             (
                 "Now in the team’s fourth year, WPI HPRC looked to reach new heights, literally and figuratively "
-                "by competing in the Intercollegiate Rocketry Engineering Competition (IREC) in "
+                "by competing in the Intercollegiate Rocket Engineering Competition (IREC) in "
                 "the 10,000 ft COTS category. The team grew to around 110 members, and was prepared to take on "
                 "the challenge of creating a more powerful rocket. The project was named Aquila, after a constellation "
                 "that contains the starts Altair and Tarazed. Altair means eagle in Latin."
