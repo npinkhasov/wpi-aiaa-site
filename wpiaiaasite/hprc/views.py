@@ -132,21 +132,21 @@ def capricornus(request):
         "caption": "Members of the structures subteam practice their machining skills.",
         "text": [
             (
-                "In the teams 5th year WPI HPRC will again compete in the Intercollegiate Rocket "
-                "Engineering Competition (IREC) in the 10,000 ft COTS category."
+                "In the team's fifth year, WPI HPRC will compete for the second time in the Intercollegiate Rocket "
+                "Engineering Competition (IREC) in the 10,000 ft COTS category. "
                 "The project is named Capricornus, the goat constellation. "
                 "The rocket is named after the brightest star in the constellation, Deneb, and the payload is named Nashira."
             ),
             (
-                "The rocket, currently in development, is planned to measure 145 inches long with a diameter of 6 inches. "
-                "The vehicle feautures improvements to the recovery system, fin can, and airbrakes system. Based on our "
-                "experience from the previous year, numerous improvements are being implmeneted for our novel coupling system. "
-                "The airbrakes will again be used to target an apogee of 10,000 feet."
+                "The rocket will be 145 inches long with a diameter of 6 inches and features improvements to the recovery system, "
+                "fin can, and airbrakes system. Based on our experience from the previous year, numerous improvements are being "
+                "implemented for our novel coupling system. The airbrakes will again be used to target an apogee of 10,000 feet."
             ),
             (
-                "The payload will be a air launched quadcopter, designed to deploy while the rocket is descending, and "
-                "release a series of cubes that feature integrated weather sensors and telemetry that will transmit information "
-                "back to the ground station. The mission will be fully autonomous with monitoring via an FPV system."
+                "This year's payload is a quadcopter, whose retention system detaches from the rocket during descent and continues descending under its own parachute. "
+                "Once the retention system reaches a certain altitude, it will release the quadcopter to perform its primary mission. "
+                "The quadcopter releases a series of three cubes that feature integrated weather sensors and telemetry "
+                "and will transmit information back to the ground station. The mission will be fully autonomous with monitoring via an FPV system."
             ),
         ],
         "officers": {
@@ -156,7 +156,7 @@ def capricornus(request):
             "Electronics Lead": "Michael Beskid",
             "Safety Officer": "Haggay Vardi",
             "Treasurer": "Aunika Yasui",
-            "Logistics Officer": "Sarah Semmy",
+            "Logistics Officer": "Sarah Semy",
             "Sponsorship Officer": "Peter Korfuzi",
             "Documentation Officer": "Jon Whooley",
             "Engagement Officer": "Navpreet Kaur",
@@ -210,15 +210,16 @@ def aquila(request):
             ),
             (
                 "The payload, Tarazed, was a quadcopter designed to locate the rocket after the rocket lands by "
-                "triangulating a signal broadcast by the rocket. It was designed verify the correct location using"
+                "triangulating a signal broadcast by the rocket. It was designed verify the correct location using "
                 "GPS data and subsequently relay its position back to the ground crew."
             ),
             (
-                "The team successfuly made it to launch week in its rookie year, a feat not accomplished by every "
-                "team. Having passed safety inspection Altair and Tarazed launched on the second day of launches, "
+                "The team successfully made it to launch week in first year at IREC, a feat not accomplished by every "
+                "team. After passing safety inspection Altair and Tarazed launched on the second day of launches, "
                 "however the vehicle broke apart at burnout due to an incorrectly programmed altimeter. Despite the "
-                "failure, the team gained significant experience from launch week, and from the failure analysis process."
-                "Within the 10k COTS category, WPI HPRC placed 3rd in technical report quality, and 11th in design quality."
+                "failure, the team gained significant experience from launch week, and from the failure analysis process. "
+                "Within the 10k COTS category, WPI HPRC placed 3rd in technical report quality, and 11th in design quality. "
+                "Additionally, the team received the Sportsmanship Award. "
             )
         ],
         "officers": {
@@ -264,26 +265,26 @@ def sirius(request):
         "caption": "A member prepares fixtures in a CNC mill before machining components for the motor retention.",
         "text": [
             (
-                "Entering their third year, WPI USLI made the decision to rebrand to the High Power Rocketry Club (HPRC).  "
-                "This year was uniquely challenging as the COVID-19 pandemic prevented the majority of in-person meetings.  "
+                "Entering their third year, WPI USLI made the decision to rebrand to the High Power Rocketry Club (HPRC). "
+                "This year was uniquely challenging as the COVID-19 pandemic prevented the majority of in-person meetings. "
                 "While the team initially continued to compete in NASA Student Launch, the team dropped out of the competition in December "
                 "as there was no way for the team to fulfill launch requirements while staying in compliance with WPI's and the CDC's "
-                "COVID safety guidelines.  Despite this, the team continued designing and building our rocket and payload through "
+                "COVID safety guidelines. Despite this, the team continued designing and building our rocket and payload through "
                 "the end of the year. The team was finally able to launch the 2021 rocket at St. Albans in April 2022 to test several systems "
                 "for the 2022 project, Aquila. "
             ),
             (
                 "The team's rocket, Sirius, continued to build upon the experience gained in the past two competition years. "
                 "It contained many new systems such as forward mounted motor retention, an airbrake system, and a custom "
-                "avionics board.  The vehicle has a predicted apogee of 4934 ft but has a target apogee of 4550 ft.  "
+                "avionics board. The vehicle has a predicted apogee of 4934 ft but has a target apogee of 4550 ft. "
                 "To ensure there is no overshoot, the airbrake system is actively controlled by the avionics to produce "
                 "just enough drag to reduce the vehicle's apogee to the target."
             ),
             (
-                "The vehicle's payload is a lander designated Polaris.  After being ejected from the vehicle during descent, Polaris "
+                "The vehicle's payload is a lander designated Polaris. After being ejected from the vehicle during descent, Polaris "
                 "lands under its own parachute before engaging its self-righting system which rights the payload from any "
-                "orientation using a set of outward folding petals.  This is more finely adjusted by the stabilization system "
-                "which uses a set of legs that deploy to level the payload within 5 degrees on uneven terrain.  Finally, "
+                "orientation using a set of outward folding petals. This is more finely adjusted by the stabilization system "
+                "which uses a set of legs that deploy to level the payload within 5 degrees on uneven terrain. Finally, "
                 "it takes a panoramic photo using a top mounted camera before transmitting the photo back to the ground station."
             )
         ],
