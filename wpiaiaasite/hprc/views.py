@@ -117,17 +117,22 @@ def capricornus(request):
         "year": "2022-2023",
         # "docs": {},
         # "photos": "",
-        # "sponsors": {
-        #     "Platinum": [
-                
-        #     ],
-        #     "Gold": [
-                
-        #     ],
-        #     "Bronze": [
-                
-        #     ]
-        # },
+        "sponsors": {
+                "Platinum": [
+                "Altium",
+		"Test Devices Inc.",
+		"WPI Giving Day Donors"
+             ],
+             "Gold": [
+                "WPI Tinkerbox",
+                "Ensign-Bickford Aerospace & Defense",
+                "enDAQ",
+		"Collins Aerospace"
+             ],
+             "Silver": [
+                "Blue Origin"
+             ]
+         },
         "image": 'hprc/capricornus/machining-test.jpg',
         "caption": "Members of the structures subteam practice their machining skills.",
         "text": [
