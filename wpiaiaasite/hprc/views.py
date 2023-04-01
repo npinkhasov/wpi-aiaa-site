@@ -115,22 +115,25 @@ def capricornus(request):
         'nbar': "projects",
         "project_title": "Capricornus",
         "year": "2022-2023",
-        # "docs": {},
+        "docs": {
+            "Sponsorship Presentation": "hprc/capricornus/2023_Sponsor_Project_Presentation.pdf",
+        },
         # "photos": "",
         "sponsors": {
-                "Platinum": [
+            "Platinum": [
                 "Altium",
-		"Test Devices Inc.",
-		"WPI Giving Day Donors"
+		        "Test Devices Inc.",
+		        "WPI Giving Day Donors"
              ],
              "Gold": [
                 "WPI Tinkerbox",
                 "Ensign-Bickford Aerospace & Defense",
-                "enDAQ",
-		"Collins Aerospace"
+		        "Collins Aerospace",
+                "enDAQ"
              ],
              "Silver": [
-                "Blue Origin"
+                "Blue Origin",
+                "Atomic Machines"
              ]
          },
         "image": 'hprc/capricornus/machining-test.jpg',
