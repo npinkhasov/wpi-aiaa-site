@@ -20,6 +20,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="{% url 'home:index' %}">
             <img src="{% static 'home/img/aiaa-logo-light-2000px-nosub.png' %}" alt="WPI AIAA" height="50">
+            <!-- <img src="{% static 'home/img/aiaa-wpi-logo-light.png' %}" alt="WPI AIAA" height="54.4"> -->
+            
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -34,7 +36,7 @@
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="btn btn-outline-secondary me-2" href="{% url 'wiki:root' %}" role="button">Wiki</a>
+                    <a class="btn btn-light me-2" href="{% url 'wiki:root' %}" role="button">Wiki</a>
                 </li>
             </ul>
         </div>
@@ -51,7 +53,7 @@
   <footer class="w-100" style="position:fixed; bottom:0; left:0;">
     <div class="w-100 p-3 text-right text-light bg-primary">
         <a class="btn btn-outline-light btn-sm mt-0 me-2 float-left" href="https://www.aiaa.org/" role="button">AIAA National</a>
-        <a class="btn btn-outline-light btn-sm mt-0 me-2 ml-2 float-left" href="{% url 'hprc:index' %}" role="button">HPRC</a>
+        <a class="btn btn-outline-light btn-sm mt-0 me-2 ml-2 float-left" href="{% url 'hprc:index' %}" role="button">WPI HPRC</a>
         <div class="float-left">
             <a href="mailto:aiaa-officers@wpi.edu">
                 <img src="{% static "icon/email-white.svg" %}" class="ml-3 grow" alt="Email"
